@@ -121,32 +121,21 @@
     }
   },
   "legal": {
-    "title": "nasin",
-    "editorLabel": "jan lawa:",
-    "editorValue": "TODO",
-    "contactLabel": "toki:",
-    "hostingLabel": "tomo ilo:",
-    "hostingValue": "Vercel",
-    "ipLabel": "ijo pi jan ante:",
-    "ipValue": "lipu en sitelen ale li tan jan lawa anu li jo e wile.",
-    "liabilityLabel": "ike:",
-    "liabilityValue": "sona ni li kama sama ni taso.",
-    "externalLinksLabel": "linja tawa tomo ante:",
-    "externalLinksValue": "linja tawa tomo jan ante li lon.",
+    "title": "nasin (legal)",
+    "body": [
+      "tomo ni li kulupu pi lipu free tawa toki pona. ABVX li pana e link tawa lipu PDF en lipu pi pona lukin.",
+      "sina ken kepeken lipu ni tawa pali pi mani ala. sipisi la lipu wan li jo e nasin (license) la nasin ona li lawa.",
+      "ABVX li pana e lipu sama ni: ‘ona li lon’. link ante li ken kama pakala. sina lukin e pakala la o toki lon GitHub."
+    ],
     "back": "o tawa"
   },
   "privacy": {
-    "title": "len",
-    "dataLabel": "sona:",
-    "dataValue": "tomo lipu ni li alasa ala e sona jan lon nasin open.",
-    "cookiesLabel": "kuki:",
-    "cookiesValue": "kuki sona lukin li lon ala lon nasin open.",
-    "thirdPartyLabel": "ilo pi jan ante:",
-    "thirdPartyValue": "linja jan ante li jo e nasin ona.",
-    "rightsLabel": "wile sina:",
-    "rightsValue": "sina wile sona la, o toki tawa mi.",
-    "contactLabel": "toki:",
-    "contactValue": "TODO",
+    "title": "len (privacy)",
+    "body": [
+      "tomo ni li wile ala e nimi pi jan. sina ken lukin e lipu, sina ken kama jo e lipu, sina pana ala e sona sina.",
+      "ken la ilo server li awen e sona lili tawa sona pi pali (IP, user-agent). mi pana ala e sona pi jan tawa mani.",
+      "sina toki tawa mi kepeken email la mi kepeken toki sina tawa toki sin taso. sina ken toki e pakala lon GitHub kin."
+    ],
     "back": "o tawa"
   },
   "contact": {

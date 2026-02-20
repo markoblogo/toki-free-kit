@@ -122,31 +122,20 @@
   },
   "legal": {
     "title": "Legal",
-    "editorLabel": "Editor:",
-    "editorValue": "TODO",
-    "contactLabel": "Contact:",
-    "hostingLabel": "Hosting:",
-    "hostingValue": "Vercel",
-    "ipLabel": "Intellectual property:",
-    "ipValue": "Texts and visuals are owned by the publisher or used with permission.",
-    "liabilityLabel": "Liability:",
-    "liabilityValue": "Information is provided as-is.",
-    "externalLinksLabel": "External links:",
-    "externalLinksValue": "Links to third-party websites.",
+    "body": [
+      "This site is a free landing page for toki pona reader kits and free translations published by ABVX. It provides links to downloads and companion pages.",
+      "Unless a specific book page says otherwise, the materials are provided for personal, non-commercial use. If a book includes its own license notice, that notice takes priority.",
+      "ABVX makes no warranties. The materials are provided “as is”. External links may change over time; if you find a broken link, please report it on GitHub."
+    ],
     "back": "Back"
   },
   "privacy": {
     "title": "Privacy",
-    "dataLabel": "Data:",
-    "dataValue": "This website does not collect personal data by default.",
-    "cookiesLabel": "Cookies:",
-    "cookiesValue": "No analytics cookies by default.",
-    "thirdPartyLabel": "Third-party services:",
-    "thirdPartyValue": "Third-party links may have independent policies.",
-    "rightsLabel": "Your rights:",
-    "rightsValue": "Contact us for privacy questions.",
-    "contactLabel": "Contact:",
-    "contactValue": "TODO",
+    "body": [
+      "This site does not ask you to create an account and does not require you to submit personal information to read or download materials.",
+      "The site may collect standard server logs (for example, IP address and user-agent) for security and reliability. We do not sell personal data.",
+      "If you contact us by email, we will use your message only to respond. For corrections and issues, you can also open a GitHub issue."
+    ],
     "back": "Back"
   },
   "contact": {
