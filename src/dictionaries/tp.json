@@ -1,104 +1,127 @@
 {
   "lang": "tp",
   "meta": {
-    "title": "ilo lipu pi toki pona (mani ala)",
-    "description": "lipu pi mani ala tawa kama sona toki pona: Reader's Kit, Chinese Wisdom, en Heart Sutra lon toki pona."
+    "title": "kulupu lipu pi pali pona (toki pona) — ale li free",
+    "description": "ni li tomo pi lipu free: lipu pi kama sona, lipu pi toki ante, en lipu pi pali sona."
   },
   "header": {
-    "lang": "EN / TP"
+    "brand": "kulupu lipu pi toki pona",
+    "lang": "EN / TP",
+    "nav": {
+      "free_books": "lipu free",
+      "faq": "FAQ",
+      "legacy": "legacy",
+      "current": "free kit"
+    }
   },
   "hero": {
-    "title": "ilo lipu pi toki pona + ante toki pi mani ala",
-    "subtitle": "lipu ni li pali tawa ijo pi mani ala lon toki pona. o open kepeken Reader's Kit, o tawa Chinese Wisdom, o lukin e Heart Sutra lon toki pona.",
-    "buy_kindle": "lipu Kindle",
-    "buy_print": "lipu pepa",
+    "title": "kulupu lipu pi pali pona (toki pona) — ale li free",
+    "subtitle": "ni li tomo pi lipu free: lipu pi kama sona, lipu pi toki ante, en lipu pi pali sona. o open kepeken lipu 'Reader’s Kit', o pana e kama sona lon lipu 'Chinese Wisdom', o kama sona e lipu 'Heart Sutra' lon toki pona.",
+    "note": "ale li free. sina ken lukin, sina ken kama jo. sina wile ala e nimi lon lipu.",
+    "primary_cta": "o lukin e lipu free",
+    "secondary_cta": "lipu sinpin (legacy)",
     "download_pdf": "o kama jo",
-    "download_epub": "o kama jo EPUB",
     "read_online": "o lukin",
-    "watch_teaser": "o lukin e sitelen tawa"
+    "watch_teaser": "o lukin e sitelen tawa",
+    "back": "o tawa"
   },
   "why": {
     "title": "tan seme la kulupu ni li pona?",
     "cards": {
       "clarity": {
-        "title": "toki lili, sona pona",
-        "text": "toki pona li weka e nasa. lipu ni li pona tawa lukin lili lon tenpo lili."
+        "title": "toki lili, lukin pona",
+        "text": "toki pona li weka e ike. lipu ni li pona tawa tenpo lili, li pona tawa lukin sin."
       },
       "free": {
-        "title": "ijo open pi mani ala",
-        "text": "ijo suli ale lon lipu ni li mani ala: lipu kama jo anu lipu ante toki."
+        "title": "open pi pali free",
+        "text": "lipu ale lon tomo ni li free: sina ken kama jo e lipu PDF, en sina ken lukin e lipu pona tawa kama sona."
       },
       "practice": {
-        "title": "lipu tawa pali",
-        "text": "o kepeken ni sama nasin: o open, o lukin, o lukin sin, o kama sona mute lon tenpo."
+        "title": "pali tawa kama sona",
+        "text": "o kepeken ona sama nasin: o open, o lukin, o sin, o kama sona mute. kama sona li lon lukin mute, lon sona ala taso."
       }
     }
   },
   "collection": {
-    "title": "lipu en ilo pi mani ala",
-    "buy_button": "o lukin",
+    "title": "lipu free",
+    "subtitle": "lipu tu wan pi open: o kama sona e toki pona kepeken lipu lon nasin pona.",
     "learn_more": "o sona",
     "readers-kit": {
-      "title": "Reader's Kit pi toki pona (mani ala)",
+      "title": "Reader’s Kit",
       "author": "jan ABVX",
-      "shortDesc": "ilo open ni li pona tawa kama sona pi toki pona.",
-      "longDesc": "ona li jo e nasin open tawa lukin lipu, e kulupu nimi lili, e linja tawa ilo kama sona pi mani ala."
+      "shortDesc": "lipu ni li lipu pi open tawa jan pi kama sona.",
+      "longDesc": "nasin lipu li pona tawa lukin sin en kama sona nimi."
     },
     "chinese-wisdom": {
-      "title": "sona Sina lon toki pona (ilo pi mani ala)",
+      "title": "Chinese Wisdom",
       "author": "jan ABVX",
-      "shortDesc": "ilo ni li pana e lipu open pi sona Sina lon nasin kama sona toki pona.",
-      "longDesc": "ona li pona tawa lukin lili lon tenpo lili: lipu PDF li lon, en nasin open tawa jan kama sona pi lukin toki tu."
+      "shortDesc": "lipu free ni li ante e toki pi lipu sinpin lon toki pona.",
+      "longDesc": "nasin sitelen li sama lon lipu ale, la sina ken lukin sin lon pona."
     },
     "heart-sutra": {
-      "title": "Heart Sutra lon toki pona (ante toki pi mani ala)",
+      "title": "Heart Sutra",
       "author": "jan ABVX",
-      "shortDesc": "lipu ni li ante toki pi mani ala tawa lukin Heart Sutra lon toki pona.",
-      "longDesc": "lipu ni li jo e nena tawa kama jo e lipu en lukin lipu lon linja. linja li TODO tawa tenpo kama."
+      "shortDesc": "lipu ni li toki ante free tawa lukin en kama sona.",
+      "longDesc": "lipu ni li lili, la ona li pona tawa lukin sin lon tenpo mute."
     }
   },
   "faq": {
-    "title": "toki wile (FAQ)",
-    "subtitle": "toki lili pi nasin kepeken lipu ni.",
+    "title": "sona lili (FAQ)",
+    "subtitle": "nimi lili pi sona: toki, free, kepeken.",
     "items": [
       {
-        "q": "lipu ni li seme?",
-        "a": "ni li kulupu ijo pi mani ala tawa kama sona toki pona en ante toki."
+        "q": "tomo ni li seme?",
+        "a": "tomo ni li kulupu pi lipu free tawa lukin: lipu kama sona en lipu toki ante lon toki pona."
       },
       {
-        "q": "ijo seme li lon tenpo ni?",
-        "a": "ijo suli tu wan: Reader's Kit, Chinese Wisdom lon toki pona, en Heart Sutra lon toki pona."
+        "q": "ni ale li free ala free?",
+        "a": "ni ale li free. sina ken kama jo e lipu, sina ken lukin e lipu, sina wile ala e nimi."
       },
       {
-        "q": "ijo ni ale li mani ala anu seme?",
-        "a": "lon. lipu ni li lon tawa ilo kama sona en ante toki pi mani ala taso."
+        "q": "mi wile sona e toki pona la mi ken open?",
+        "a": "sina ken. lipu 'Reader’s Kit' li pali tawa jan pi open. nasin sitelen li pana e pona tawa lukin."
       },
       {
-        "q": "mi wile sona toki pona tan open anu seme?",
-        "a": "ala. o open kepeken Reader's Kit."
+        "q": "mi ken kama sona lon tenpo mi taso?",
+        "a": "sina ken. o lukin lili, o lukin sin, o toki e nimi pi kama lon lukin. ni li pona tawa kama sona."
       },
       {
-        "q": "mi ken kama sona taso kepeken ni anu seme?",
-        "a": "lon. nasin li pona tawa lukin lili lon tenpo ale."
+        "q": "tan seme la sitelen li lon tu?",
+        "a": "lipu mute la sitelen Latin en sitelen pona-ready li lon. ni li pona tawa lukin e nimi lon tenpo kama."
       },
       {
-        "q": "tan seme la linja ali li toki TODO?",
-        "a": "linja final li kama ala lon tenpo ni. ijo lukin li pona, sina ken ante e linja lon tenpo kama."
-      },
-      {
-        "q": "EN en TP li lon anu seme?",
-        "a": "lon. lipu ni li jo e /en en /tp."
-      },
-      {
-        "q": "mi ken toki ike tawa seme?",
-        "a": "o tawa linja GitHub lon noka lipu."
+        "q": "mi ken toki e pakala lon seme?",
+        "a": "o open e issue lon GitHub, o pana e link, o toki e pakala lili."
       }
     ]
   },
+  "bookPages": {
+    "readers-kit": {
+      "paragraphs": [
+        "lipu 'Reader’s Kit' li lipu pi open tawa jan pi kama sona. ona li pana e lipu lili tawa lukin, tawa ni: sina ken open lukin e toki pona lon tenpo poka.",
+        "nasin lipu li pana e pali pona: o lukin lili, o lukin sin, o sona e nimi pi kama lon lukin. lipu mute la sitelen Latin en sitelen pona-ready li lon, tawa pona pi lukin.",
+        "o kepeken lipu ni sama open. tenpo la sina kama sona e nasin, la o tawa lipu ante free lon tomo ni, o kama sona mute kepeken lukin."
+      ]
+    },
+    "chinese-wisdom": {
+      "paragraphs": [
+        "lipu 'Chinese Wisdom' li lipu free. ona li ante e toki pi lipu sinpin lon toki pona lon nasin pi lukin pona, pi pilin pona.",
+        "lipu ni li pali tawa kama sona: nasin sitelen li sama lon lipu ale, la sina ken weka e wile pi alasa sona ike, o lukin taso, o lukin sin.",
+        "sina pilin pona tan nasin ni la o kepeken ona sama nasin tawa kama sona. lukin mute li pana e sona mute."
+      ]
+    },
+    "heart-sutra": {
+      "paragraphs": [
+        "lipu 'Heart Sutra' lon toki pona li toki ante free tawa lukin en tawa kama sona. lipu ni li lili, la ona li pona tawa lukin sin lon tenpo mute.",
+        "lon lipu ni la sina ken kama jo e lipu PDF, en sina ken lukin e toki ante. sina wile pana e sona sin anu toki e pakala la o open e issue lon GitHub.",
+        "o lukin kepeken tenpo lili. o lukin sin. lukin mute la nimi en nasin toki li kama sona."
+      ]
+    }
+  },
   "legal": {
-    "title": "lipu lawa",
+    "title": "nasin",
     "editorLabel": "jan lawa:",
-    "editorValue": "ABVX",
+    "editorValue": "TODO",
     "contactLabel": "toki:",
     "hostingLabel": "tomo ilo:",
     "hostingValue": "Vercel",
@@ -108,29 +131,47 @@
     "liabilityValue": "sona ni li kama sama ni taso.",
     "externalLinksLabel": "linja tawa tomo ante:",
     "externalLinksValue": "linja tawa tomo jan ante li lon.",
-    "back": "<- o tawa pini"
+    "back": "o tawa"
   },
   "privacy": {
-    "title": "nasin len",
+    "title": "len",
     "dataLabel": "sona:",
     "dataValue": "tomo lipu ni li alasa ala e sona jan lon nasin open.",
     "cookiesLabel": "kuki:",
-    "cookiesValue": "kuki sona lukin li lon ala lon nasin open. ilo pi jan ante li ken pana e kuki.",
+    "cookiesValue": "kuki sona lukin li lon ala lon nasin open.",
     "thirdPartyLabel": "ilo pi jan ante:",
     "thirdPartyValue": "linja jan ante li jo e nasin ona.",
     "rightsLabel": "wile sina:",
     "rightsValue": "sina wile sona la, o toki tawa mi.",
     "contactLabel": "toki:",
-    "contactValue": "github.com/markoblogo/toki-free-kit",
-    "back": "<- o tawa pini"
+    "contactValue": "TODO",
+    "back": "o tawa"
   },
   "contact": {
-    "text": "kulupu"
+    "text": "toki",
+    "url": "mailto:todo@example.com",
+    "value": "TODO"
   },
   "footer": {
+    "project_label": "pali",
+    "legacy_label": "legacy",
     "copyright": "© ABVX.xyz",
-    "legal_mentions": "lipu lawa",
-    "privacy_policy": "nasin len",
-    "back_home": "o tawa tomo"
+    "legal_mentions": "nasin",
+    "privacy_policy": "len",
+    "banners": {
+      "reader": {
+        "title": "Reader's Kit",
+        "subtitle": "lipu open free."
+      },
+      "chinese": {
+        "title": "Chinese Wisdom",
+        "subtitle": "lipu free pi lukin tu."
+      },
+      "sutra": {
+        "title": "Heart Sutra",
+        "subtitle": "toki ante free."
+      }
+    },
+    "back_home": "o tawa"
   }
 }

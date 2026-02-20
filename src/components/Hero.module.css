@@ -42,6 +42,12 @@
   max-width: 38ch;
 }
 
+.note {
+  margin-top: 0.9rem;
+  color: var(--color-ink-light);
+  font-size: 0.95rem;
+}
+
 .ctaRow {
   margin-top: 1.75rem;
   display: flex;

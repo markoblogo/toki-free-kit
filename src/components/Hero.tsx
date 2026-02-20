@@ -18,6 +18,15 @@ export default function Hero({ dict, lang }: { dict: any; lang: 'en' | 'tp' }) {
         <div className={styles.leftCol}>
           <h1 className={styles.title}>{dict.hero.title}</h1>
           <p className={styles.subtitle}>{dict.hero.subtitle}</p>
+          <p className={styles.note}>{dict.hero.note}</p>
+          <div className={styles.ctaRow}>
+            <a href={`/${lang}#collection`} className="btn btn-accent ux-hover-btn ux-focus-ring">
+              {dict.hero.primary_cta}
+            </a>
+            <a href="https://toki.abvx.xyz/kit/" target="_blank" rel="noopener noreferrer" className="btn ux-hover-btn ux-focus-ring">
+              {dict.hero.secondary_cta}
+            </a>
+          </div>
         </div>
 
         <div className={styles.rightCol}>

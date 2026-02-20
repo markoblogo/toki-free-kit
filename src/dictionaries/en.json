@@ -1,60 +1,68 @@
 {
   "lang": "en",
   "meta": {
-    "title": "toki pona free kit - free translations and reading packs",
-    "description": "Free toki pona reading kits and translations: Reader's Kit, Chinese Wisdom kit, and Heart Sutra in toki pona."
+    "title": "toki pona free kit + free translations",
+    "description": "A focused landing page for free toki pona materials: Reader's Kit, Chinese Wisdom, and Heart Sutra translation."
   },
   "header": {
-    "lang": "EN / TP"
+    "brand": "toki pona free kit",
+    "lang": "EN / TP",
+    "nav": {
+      "free_books": "Free books",
+      "faq": "FAQ",
+      "legacy": "Legacy kit",
+      "current": "Free kit"
+    }
   },
   "hero": {
     "title": "toki pona free kit + free translations",
-    "subtitle": "A focused landing page for free toki pona materials. Start with the Reader's Kit, continue with Chinese Wisdom, and read Heart Sutra in toki pona.",
-    "buy_kindle": "Kindle edition",
-    "buy_print": "Paperback",
+    "subtitle": "A focused landing page for free toki pona materials. Start with the Reader's Kit, continue with Chinese Wisdom, and read the Heart Sutra translation in toki pona.",
+    "note": "All items here are free to download and read. No signup.",
+    "primary_cta": "Start with the free books",
+    "secondary_cta": "Legacy kit",
     "download_pdf": "Download",
-    "download_epub": "Download EPUB",
     "read_online": "Read",
-    "watch_teaser": "Watch teaser"
+    "watch_teaser": "Watch teaser",
+    "back": "Back"
   },
   "why": {
     "title": "Why this free collection?",
     "cards": {
       "clarity": {
         "title": "Small language, clear reading",
-        "text": "toki pona helps reduce noise. The kits are designed for short sessions and repeatable reading practice."
+        "text": "toki pona reduces noise. These kits are built for short sessions and repeatable reading practice."
       },
       "free": {
         "title": "Free entry points",
-        "text": "All core items on this page are free resources: downloadable kits or translation pages."
+        "text": "Each book on this page is free: downloadable PDFs and companion pages for reading and study."
       },
       "practice": {
         "title": "Built for practice",
-        "text": "Use these materials as a path: start, read, review, and return with stronger vocabulary and comprehension."
+        "text": "Use them as a path: start, read, review, and return. You'll grow vocabulary and comprehension by reading, not memorizing."
       }
     }
   },
   "collection": {
-    "title": "Free books and kits",
-    "buy_button": "View",
+    "title": "Free books",
+    "subtitle": "Three free entries to start reading toki pona with real texts and parallel layouts.",
     "learn_more": "Learn more",
     "readers-kit": {
       "title": "The Toki Pona Reader's Kit (Free)",
       "author": "ABVX",
-      "shortDesc": "A practical free starter pack for reading and learning toki pona.",
-      "longDesc": "Includes a guided entry to reading practice, compact references, and curated links for people starting with free toki pona resources."
+      "shortDesc": "Beginner-friendly entry to reading toki pona through short, real texts.",
+      "longDesc": "A practical free starter pack for reading and learning toki pona."
     },
     "chinese-wisdom": {
       "title": "Chinese Wisdom in toki pona (Free Kit)",
       "author": "ABVX",
-      "shortDesc": "A free reading kit for Chinese classics adapted to toki pona learning flow.",
-      "longDesc": "Focused on calm, short reading sessions: includes a free PDF layout and entry points for learners who want parallel text exploration."
+      "shortDesc": "A free kit with short classical passages in a calm toki pona format.",
+      "longDesc": "An accessible step after the Reader's Kit, with repeatable practice-oriented layouts."
     },
     "heart-sutra": {
       "title": "Heart Sutra in toki pona (Free Translation)",
       "author": "ABVX",
-      "shortDesc": "A free toki pona translation track for Heart Sutra reading and study.",
-      "longDesc": "Prepared as a free translation page with download and read entry points. Links are placeholders and can be replaced when final files are published."
+      "shortDesc": "A compact free translation track for repeated reading and study.",
+      "longDesc": "Built for memorization-free comprehension through slow repetition and stable layout."
     }
   },
   "faq": {
@@ -63,42 +71,57 @@
     "items": [
       {
         "q": "What is this site?",
-        "a": "It is a free collection of toki pona learning and translation materials in one place."
+        "a": "A simple landing page that collects free toki pona reader kits and a free translation, with direct downloads and companion pages."
       },
       {
-        "q": "Which resources are included now?",
-        "a": "Three core items: The Toki Pona Reader's Kit, Chinese Wisdom in toki pona, and Heart Sutra in toki pona."
-      },
-      {
-        "q": "Are these materials free?",
-        "a": "Yes. This page is dedicated to free kits and free translation resources."
+        "q": "Are these materials really free?",
+        "a": "Yes. All items listed here are free to download and read. Licensing notes are listed on each book page."
       },
       {
         "q": "Do I need to know toki pona already?",
-        "a": "No. The Reader's Kit is the recommended starting point for beginners."
+        "a": "No. The Reader's Kit is designed as a beginner-friendly entry, and the layouts are meant to support first-time readers."
       },
       {
         "q": "Can I use these for self-study?",
-        "a": "Yes. They are structured for short, repeatable reading sessions."
+        "a": "Yes. The kits are structured for short sessions. Read a little, revisit the same text, and track repeated words and patterns."
       },
       {
-        "q": "Why are some links marked TODO?",
-        "a": "Some final target URLs are not published yet. The UI is ready and links can be replaced without redesign."
-      },
-      {
-        "q": "Do you support both EN and TP?",
-        "a": "Yes. This landing supports English and toki pona at /en and /tp."
+        "q": "Why is the text duplicated?",
+        "a": "Many pages include a duplicate layout (Latin toki pona and a sitelen-ready version) to make recognition easier while you learn."
       },
       {
         "q": "Where can I report issues?",
-        "a": "Use the GitHub repository link in the footer to report content or link issues."
+        "a": "Open an issue on GitHub with a link and a short description of the problem."
       }
     ]
   },
+  "bookPages": {
+    "readers-kit": {
+      "paragraphs": [
+        "The Toki Pona Reader’s Kit is a beginner-friendly entry to reading toki pona through short, real texts. It’s designed to help you start reading quickly, even if your vocabulary is small.",
+        "The layout supports practice: you read a little, return often, and learn repeated words and patterns in context. Many pages include a duplicate presentation so recognition becomes easier as you progress.",
+        "Use this kit as a starting point. When the format clicks, continue with the next free book on the landing page and keep building fluency by reading."
+      ]
+    },
+    "chinese-wisdom": {
+      "paragraphs": [
+        "Chinese Wisdom in toki pona is a free kit that adapts short classical passages into a calm, readable toki pona format. It’s meant as an accessible step after the Reader’s Kit.",
+        "The pages are structured for practice and comparison. You can read the text, revisit key lines, and use the consistent layout to reduce guessing while you learn.",
+        "If you enjoy this approach, treat it as a bridge: you get more reading time, more repeated vocabulary, and a gentle way to continue beyond the first kit."
+      ]
+    },
+    "heart-sutra": {
+      "paragraphs": [
+        "Heart Sutra in toki pona is a free translation track intended for reading and study. It’s a compact text, which makes it practical for repeated sessions and memorization-free comprehension.",
+        "This page collects the translation, a downloadable edition, and links that support reading. If you notice unclear choices or want to suggest improvements, use the GitHub issue link.",
+        "Read it slowly and return often. With a short text, progress comes from repetition: each pass turns unfamiliar phrases into familiar patterns."
+      ]
+    }
+  },
   "legal": {
-    "title": "Legal notice",
+    "title": "Legal",
     "editorLabel": "Editor:",
-    "editorValue": "ABVX",
+    "editorValue": "TODO",
     "contactLabel": "Contact:",
     "hostingLabel": "Hosting:",
     "hostingValue": "Vercel",
@@ -108,29 +131,47 @@
     "liabilityValue": "Information is provided as-is.",
     "externalLinksLabel": "External links:",
     "externalLinksValue": "Links to third-party websites.",
-    "back": "<- Back"
+    "back": "Back"
   },
   "privacy": {
-    "title": "Privacy policy",
+    "title": "Privacy",
     "dataLabel": "Data:",
     "dataValue": "This website does not collect personal data by default.",
     "cookiesLabel": "Cookies:",
-    "cookiesValue": "No analytics cookies by default. Embedded third-party services may set cookies.",
+    "cookiesValue": "No analytics cookies by default.",
     "thirdPartyLabel": "Third-party services:",
     "thirdPartyValue": "Third-party links may have independent policies.",
     "rightsLabel": "Your rights:",
     "rightsValue": "Contact us for privacy questions.",
     "contactLabel": "Contact:",
-    "contactValue": "github.com/markoblogo/toki-free-kit",
-    "back": "<- Back"
+    "contactValue": "TODO",
+    "back": "Back"
   },
   "contact": {
-    "text": "Project"
+    "text": "Contact",
+    "url": "mailto:todo@example.com",
+    "value": "TODO"
   },
   "footer": {
+    "project_label": "Project",
+    "legacy_label": "Legacy kit",
     "copyright": "© ABVX.xyz",
     "legal_mentions": "Legal",
     "privacy_policy": "Privacy",
-    "back_home": "Back to home"
+    "banners": {
+      "reader": {
+        "title": "Reader's Kit",
+        "subtitle": "Beginner-friendly free entry."
+      },
+      "chinese": {
+        "title": "Chinese Wisdom",
+        "subtitle": "Free parallel reading kit."
+      },
+      "sutra": {
+        "title": "Heart Sutra",
+        "subtitle": "Free translation track."
+      }
+    },
+    "back_home": "Back"
   }
 }
