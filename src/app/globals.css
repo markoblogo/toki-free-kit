@@ -6,6 +6,7 @@
   --color-paper: #fbfbfb;
   /* Near-white modern background */
   --color-paper-dark: #f0f0f0;
+  --color-bg: var(--color-paper);
   --color-ink: #1a1a1a;
   /* High contrast text */
   --color-ink-light: #555555;
