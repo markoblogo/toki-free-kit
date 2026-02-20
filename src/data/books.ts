@@ -85,8 +85,8 @@ export const books: Book[] = [
       en: 'ABVX',
       tp: 'jan ABVX',
     },
-    coverImage: '/books/heart-sutra/cover.png',
-    promoImage: '/books/heart-sutra/promo.jpg',
+    coverImage: '/books/heart-sutra/cover.svg',
+    promoImage: '/books/heart-sutra/promo.png',
     downloadPdfUrl: '/books/heart-sutra/heart-sutra.pdf',
     teaserVideoId: '5q0eaRllDJQ',
     shortDescription: {
