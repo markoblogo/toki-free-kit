@@ -36,12 +36,15 @@ function Banner({ href, title, subtitle, variant, iconText = '>', thumbSrc }: Ba
   );
 }
 
-export default function Footer({ dict, lang }: { dict: any; lang: 'en' | 'tp' }) {
-  const socialGitHub = 'https://github.com/markoblogo/toki-free-kit';
-  const socialLegacy = 'https://toki.abvx.xyz/kit/';
-  const socialProject = 'https://toki-free.abvx.xyz';
-  const contactHref = dict?.contact?.url ?? 'mailto:todo@example.com';
-  const contactText = dict?.contact?.value ?? 'TODO';
+export default function Footer({ dict, lang: _lang }: { dict: any; lang: 'en' | 'tp' }) {
+  const socialMedium = 'https://abvcreative.medium.com/';
+  const socialSubstack = 'https://abvx.substack.com/';
+  const socialGitHub = 'https://github.com/markoblogo';
+  const projectUrl = 'https://abvx.xyz/';
+  const legalUrl = 'https://stoic.abvx.xyz/en/legal';
+  const privacyUrl = 'https://stoic.abvx.xyz/en/privacy';
+  const mailto = 'mailto:a.biletskyi@gmail.com?subject=toki%20pona%20free%20kit';
+  const emailDisplay = 'a.biletskyi@gmail.com';
 
   return (
     <footer className={styles.footer}>
@@ -50,30 +53,30 @@ export default function Footer({ dict, lang }: { dict: any; lang: 'en' | 'tp' })
           <div className={styles.leftCol}>
             <div className={styles.contactRow}>
               <h4 className={styles.contactLabel}>{dict?.contact?.text ?? 'Contact'}</h4>
-              <a href={contactHref} className={`${styles.mailLink} ux-hover-btn ux-focus-ring`}>{contactText}</a>
+              <a href={mailto} className={`${styles.mailLink} ux-hover-btn ux-focus-ring`}>{emailDisplay}</a>
 
               <div className={styles.socials}>
+                <a href={socialMedium} target="_blank" rel="noopener noreferrer" className={`${styles.socialLink} ux-hover-btn ux-focus-ring`}>
+                  Medium
+                </a>
+                <a href={socialSubstack} target="_blank" rel="noopener noreferrer" className={`${styles.socialLink} ux-hover-btn ux-focus-ring`}>
+                  Substack
+                </a>
                 <a href={socialGitHub} target="_blank" rel="noopener noreferrer" className={`${styles.socialLink} ux-hover-btn ux-focus-ring`}>
                   GitHub
-                </a>
-                <a href={socialLegacy} target="_blank" rel="noopener noreferrer" className={`${styles.socialLink} ux-hover-btn ux-focus-ring`}>
-                  {dict?.footer?.legacy_label ?? 'Legacy kit'}
-                </a>
-                <a href={socialProject} target="_blank" rel="noopener noreferrer" className={`${styles.socialLink} ux-hover-btn ux-focus-ring`}>
-                  {dict?.footer?.project_label ?? 'Project'}
                 </a>
               </div>
             </div>
 
             <div className={styles.legalRow}>
-              <a href={socialProject} target="_blank" rel="noopener noreferrer" className={`${styles.copyright} ux-hover-btn ux-focus-ring`}>
-                {dict?.footer?.copyright ?? '© ABVX.xyz'}
+              <a href={projectUrl} target="_blank" rel="noopener noreferrer" className={`${styles.copyright} ux-hover-btn ux-focus-ring`}>
+                © 2026 ABVX.xyz
               </a>
               <div className={styles.legalLinks}>
-                <Link href={`/${lang}/legal`} className={`${styles.legalLink} ux-hover-btn ux-focus-ring`}>
+                <Link href={legalUrl} className={`${styles.legalLink} ux-hover-btn ux-focus-ring`} target="_blank">
                   {dict?.footer?.legal_mentions ?? 'Legal'}
                 </Link>
-                <Link href={`/${lang}/privacy`} className={`${styles.legalLink} ux-hover-btn ux-focus-ring`}>
+                <Link href={privacyUrl} className={`${styles.legalLink} ux-hover-btn ux-focus-ring`} target="_blank">
                   {dict?.footer?.privacy_policy ?? 'Privacy'}
                 </Link>
               </div>
@@ -84,24 +87,23 @@ export default function Footer({ dict, lang }: { dict: any; lang: 'en' | 'tp' })
             <div className={styles.banners}>
               <Banner
                 variant="translator"
-                href="/books/reader-kit/reader-kit.pdf"
-                title={dict?.footer?.banners?.reader?.title ?? 'Reader’s Kit'}
-                subtitle={dict?.footer?.banners?.reader?.subtitle ?? 'Free starter pack for toki pona.'}
-                thumbSrc="/books/reader-kit/cover.jpg"
+                href="https://toki.abvx.xyz/"
+                title="Toki Pona Translator"
+                subtitle="Translate into toki pona."
               />
               <Banner
                 variant="learn"
-                href="/books/chinese-wisdom/chinese-wisdom.pdf"
-                title={dict?.footer?.banners?.chinese?.title ?? 'Chinese Wisdom'}
-                subtitle={dict?.footer?.banners?.chinese?.subtitle ?? 'Free kit with parallel reading.'}
-                thumbSrc="/books/chinese-wisdom/cover.jpg"
+                href="https://toki.abvx.xyz/learn"
+                title="Learn Toki Pona"
+                subtitle="Courses and learning resources."
+                iconText=">"
               />
               <Banner
                 variant="kit"
-                href="/books/heart-sutra/heart-sutra.pdf"
-                title={dict?.footer?.banners?.sutra?.title ?? 'Heart Sutra'}
-                subtitle={dict?.footer?.banners?.sutra?.subtitle ?? 'Free translation in toki pona.'}
-                thumbSrc="/books/heart-sutra/cover.svg"
+                href="https://stoic.abvx.xyz/"
+                title="Stoic Wisdom in Toki Pona"
+                subtitle="Main stoic landing."
+                iconText=">"
               />
             </div>
           </div>
