@@ -40,6 +40,7 @@ export const books: Book[] = [
     coverImage: '/books/reader-kit/cover.jpg',
     promoImage: '/books/reader-kit/promo.jpg',
     downloadPdfUrl: '/books/reader-kit/reader-kit.pdf',
+    readOnlineUrl: 'https://toki.abvx.xyz/kit/',
     teaserVideoId: 'F7fSBElppzI',
     shortDescription: {
       en: 'A practical free starter pack for reading and learning toki pona.',
@@ -64,6 +65,7 @@ export const books: Book[] = [
     coverImage: '/books/chinese-wisdom/cover.jpg',
     promoImage: '/books/chinese-wisdom/promo.png',
     downloadPdfUrl: '/books/chinese-wisdom/chinese-wisdom.pdf',
+    readOnlineUrl: 'https://toki.abvx.xyz/kit/',
     teaserVideoId: 'BOVyG1jP580',
     shortDescription: {
       en: 'A free reading kit for Chinese classics adapted to toki pona learning flow.',
@@ -88,6 +90,7 @@ export const books: Book[] = [
     coverImage: '/books/heart-sutra/cover.svg',
     promoImage: '/books/heart-sutra/promo.png',
     downloadPdfUrl: '/books/heart-sutra/heart-sutra.pdf',
+    readOnlineUrl: 'https://toki.abvx.xyz/kit/',
     teaserVideoId: '5q0eaRllDJQ',
     shortDescription: {
       en: 'A free toki pona translation track for Heart Sutra reading and study.',

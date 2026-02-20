@@ -9,11 +9,13 @@ import Script from 'next/script';
 
 function getLocalizedBook(dict: any, book: (typeof books)[number], lang: 'en' | 'tp') {
   const localized = dict?.collection?.[book.id];
+  const paragraphs = dict?.bookPages?.[book.id]?.paragraphs;
   return {
     title: localized?.title || book.title[lang] || book.title.en,
     author: localized?.author || book.author[lang] || book.author.en,
     shortDesc: localized?.shortDesc || book.shortDescription[lang] || book.shortDescription.en,
     longDesc: localized?.longDesc || book.longDescription[lang] || book.longDescription.en,
+    paragraphs: Array.isArray(paragraphs) ? paragraphs : [],
   };
 }
 
@@ -84,7 +86,7 @@ export default async function BookPage({ params }: { params: Promise<{ lang: str
 
       <div className="container">
         <Link href={`/${safeLang}#${book.id}`} className={`${styles.backLink} ux-hover-btn ux-focus-ring`}>
-          ← {dict?.footer?.back_home ?? 'Back to home'}
+          ← {dict?.hero?.back ?? 'Back'}
         </Link>
 
         <div className={styles.hero}>
@@ -108,24 +110,30 @@ export default async function BookPage({ params }: { params: Promise<{ lang: str
                   {dict.hero.read_online}
                 </a>
               )}
+              {book.teaserVideoId && (
+                <a
+                  href={`https://www.youtube.com/watch?v=${book.teaserVideoId}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn ux-hover-btn ux-focus-ring"
+                >
+                  {dict.hero.watch_teaser}
+                </a>
+              )}
+              <Link href={`/${safeLang}#${book.id}`} className="btn ux-hover-btn ux-focus-ring">
+                {dict?.hero?.back ?? 'Back'}
+              </Link>
             </div>
-
-            {book.teaserVideoId && (
-              <a
-                href={`https://www.youtube.com/watch?v=${book.teaserVideoId}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`${styles.teaserLink} ux-hover-btn ux-focus-ring`}
-              >
-                ▶ {dict.hero.watch_teaser}
-              </a>
-            )}
           </div>
         </div>
 
         <div className={styles.longDesc}>
           <h2 className={styles.sectionTitle}>{dict?.collection?.learn_more ?? 'Learn more'}</h2>
-          <p>{localized.longDesc}</p>
+          {localized.paragraphs.length > 0 ? (
+            localized.paragraphs.map((paragraph: string, index: number) => <p key={index}>{paragraph}</p>)
+          ) : (
+            <p>{localized.longDesc}</p>
+          )}
         </div>
       </div>
     </main>
