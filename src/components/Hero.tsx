@@ -3,6 +3,7 @@
 import styles from './Hero.module.css';
 import HeroCoverGrid from './HeroCoverGrid';
 import { books, Book } from '@/data/books';
+import GiftBadge from './GiftBadge';
 
 export default function Hero({ dict, lang }: { dict: any; lang: 'en' | 'tp' }) {
   const handleSelectBook = (book: Book) => {
@@ -30,6 +31,7 @@ export default function Hero({ dict, lang }: { dict: any; lang: 'en' | 'tp' }) {
         </div>
 
         <div className={styles.rightCol}>
+          <GiftBadge label={dict.hero.all_free_badge} className={styles.heroBadge} />
           <HeroCoverGrid books={books} onSelect={handleSelectBook} selectedBookId={null} dict={dict} lang={lang} />
         </div>
       </div>

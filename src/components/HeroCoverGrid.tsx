@@ -3,7 +3,6 @@
 import Image from 'next/image';
 import { Book } from '@/data/books';
 import styles from './HeroCoverGrid.module.css';
-import GiftBadge from './GiftBadge';
 import { useState } from 'react';
 
 interface HeroCoverGridProps {
@@ -64,7 +63,6 @@ export default function HeroCoverGrid({ books, onSelect, lang }: HeroCoverGridPr
                     priority={index < 3}
                   />
                 </div>
-                <GiftBadge label="FREE" />
               </div>
             </div>
           );

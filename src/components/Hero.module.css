@@ -57,6 +57,12 @@
 
 .rightCol {
   width: 100%;
+  position: relative;
+}
+
+.heroBadge {
+  top: -18px !important;
+  right: -10px !important;
 }
 
 .noteList {

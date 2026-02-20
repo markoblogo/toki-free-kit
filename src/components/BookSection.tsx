@@ -4,7 +4,6 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { Book } from '@/data/books';
 import styles from './BookSection.module.css';
-import GiftBadge from './GiftBadge';
 
 interface BookSectionProps {
   book: Book;
@@ -46,7 +45,6 @@ export default function BookSection({ book, dict, isLast }: BookSectionProps) {
 
         <div className={styles.contentCol}>
           <header className={styles.header}>
-            <GiftBadge label="FREE" className={styles.sectionBadge} />
             <h2 className={styles.title}>{title}</h2>
             <p className={styles.author}>{author}</p>
           </header>
