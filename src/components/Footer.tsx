@@ -86,21 +86,21 @@ export default function Footer({ dict, lang }: { dict: any; lang: 'en' | 'tp' })
               <Banner
                 variant="translator"
                 href="https://toki.abvx.xyz/"
-                title="Toki Pona Translator"
-                subtitle="Translate into toki pona."
+                title={dict?.footer?.banners?.translator?.title ?? 'Toki Pona Translator'}
+                subtitle={dict?.footer?.banners?.translator?.subtitle ?? 'Translate into toki pona.'}
               />
               <Banner
                 variant="learn"
                 href="https://toki.abvx.xyz/learn"
-                title="Learn Toki Pona"
-                subtitle="Courses and learning resources."
+                title={dict?.footer?.banners?.learn?.title ?? 'Learn Toki Pona'}
+                subtitle={dict?.footer?.banners?.learn?.subtitle ?? 'Courses and learning resources.'}
                 iconText=">"
               />
               <Banner
                 variant="kit"
                 href="https://stoic.abvx.xyz/"
-                title="Stoic Wisdom in Toki Pona"
-                subtitle="Main stoic landing."
+                title={dict?.footer?.banners?.stoic?.title ?? 'Stoic Wisdom in Toki Pona'}
+                subtitle={dict?.footer?.banners?.stoic?.subtitle ?? 'Main stoic landing.'}
                 iconText=">"
               />
             </div>

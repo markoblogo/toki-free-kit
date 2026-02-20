@@ -21,7 +21,7 @@ const STACK_TRANSFORMS = [
   { x: 320, y: -70, r: 10, z: 6 },
 ];
 
-export default function HeroCoverGrid({ books, onSelect, lang }: HeroCoverGridProps) {
+export default function HeroCoverGrid({ books, onSelect, dict }: HeroCoverGridProps) {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
@@ -56,7 +56,7 @@ export default function HeroCoverGrid({ books, onSelect, lang }: HeroCoverGridPr
                 <div className={styles.imageContainer}>
                   <Image
                     src={book.coverImage}
-                    alt={book.title[lang === 'tp' ? 'tp' : 'en'] || book.title.en}
+                    alt={dict?.books?.[book.id]?.title ?? book.id}
                     fill
                     className={styles.coverImg}
                     sizes="(max-width: 768px) 240px, 300px"
