@@ -8,7 +8,6 @@ import Footer from '@/components/Footer';
 import FAQ from '@/components/FAQ';
 import styles from './page.module.css';
 import { books } from '@/data/books';
-import { moreBooks } from '@/data/moreBooks';
 import { orgJsonLd, seriesJsonLd, websiteJsonLd, jsonLdForBook } from '@/lib/jsonld';
 
 export default async function Page({ params }: { params: Promise<{ lang: string }> }) {
@@ -18,13 +17,7 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
 
   const graph = {
     '@context': 'https://schema.org',
-    '@graph': [
-      orgJsonLd(),
-      websiteJsonLd(validLang),
-      seriesJsonLd(validLang),
-      ...books.map((b) => jsonLdForBook(validLang, b)),
-      ...moreBooks.map((b) => jsonLdForBook(validLang, b)),
-    ],
+    '@graph': [orgJsonLd(), websiteJsonLd(validLang), seriesJsonLd(validLang), ...books.map((b) => jsonLdForBook(validLang, b))],
   };
 
   const faqItems = (dict?.faq?.items ?? []).map((item: any) => ({
@@ -45,11 +38,7 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
 
   return (
     <main className={styles.main}>
-      <Script
-        id="jsonld-stoic-series"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }}
-      />
+      <Script id="jsonld-toki-free" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }} />
 
       <Header lang={validLang} />
       <Hero dict={dict} lang={validLang} />

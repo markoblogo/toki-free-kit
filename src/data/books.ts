@@ -5,13 +5,22 @@ export interface LocalizedString {
 
 export interface Book {
   id: string;
-  type: 'gift';
+  type: 'commercial' | 'gift';
   title: LocalizedString;
   author: LocalizedString;
   coverImage: string;
   promoImage: string;
+  amazonKindleUrl?: string;
+  amazonPrintUrl?: string;
   downloadPdfUrl?: string;
+  downloadEpubUrl?: string;
   readOnlineUrl?: string;
+  teaserVideoId?: string;
+  identifiers?: {
+    asinKindle?: string;
+    asinPrint?: string;
+    isbn13Print?: string;
+  };
   shortDescription: LocalizedString;
   longDescription: LocalizedString;
 }

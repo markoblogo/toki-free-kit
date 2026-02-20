@@ -1,6 +1,6 @@
 import type { Book } from '@/data/books';
 
-export const SITE_URL = 'https://stoic.abvx.xyz';
+export const SITE_URL = 'https://toki-free.abvx.xyz';
 
 export function orgJsonLd() {
   return {
@@ -8,7 +8,7 @@ export function orgJsonLd() {
     '@type': 'Organization',
     name: 'ABVX',
     url: 'https://abvx.xyz',
-    sameAs: ['https://abvcreative.medium.com/', 'https://abvx.substack.com/', 'https://github.com/markoblogo'],
+    sameAs: ['https://github.com/markoblogo/toki-free-kit'],
   };
 }
 
@@ -16,7 +16,7 @@ export function websiteJsonLd(lang: 'en' | 'tp') {
   return {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'Stoic Wisdom Series',
+    name: 'toki pona free kit',
     url: SITE_URL,
     inLanguage: lang === 'tp' ? 'tok' : 'en',
   };
@@ -26,7 +26,7 @@ export function seriesJsonLd(lang: 'en' | 'tp') {
   return {
     '@context': 'https://schema.org',
     '@type': 'CreativeWorkSeries',
-    name: 'Stoic Wisdom Series',
+    name: 'toki pona free kit',
     url: `${SITE_URL}/${lang}`,
     inLanguage: lang === 'tp' ? 'tok' : 'en',
     publisher: {
@@ -37,24 +37,12 @@ export function seriesJsonLd(lang: 'en' | 'tp') {
   };
 }
 
-function identifiersFromBook(book: Book) {
-  const ids: any[] = [];
-  if (book.identifiers?.isbn13Print) {
-    ids.push({ '@type': 'PropertyValue', propertyID: 'ISBN-13', value: book.identifiers.isbn13Print });
-  }
-  if (book.identifiers?.asinKindle) {
-    ids.push({ '@type': 'PropertyValue', propertyID: 'ASIN', value: book.identifiers.asinKindle });
-  }
-  if (book.identifiers?.asinPrint) {
-    ids.push({ '@type': 'PropertyValue', propertyID: 'ASIN', value: book.identifiers.asinPrint });
-  }
-  return ids.length ? ids : undefined;
-}
-
 export function jsonLdForBook(lang: 'en' | 'tp', book: Book) {
   const inLanguage = lang === 'tp' ? 'tok' : 'en';
 
-  const common: Record<string, any> = {
+  const sameAs = [book.downloadPdfUrl, book.readOnlineUrl].filter(Boolean);
+
+  return {
     '@context': 'https://schema.org',
     '@type': 'Book',
     '@id': `${SITE_URL}/${lang}#${book.id}`,
@@ -62,48 +50,30 @@ export function jsonLdForBook(lang: 'en' | 'tp', book: Book) {
     author: { '@type': 'Person', name: book.author[lang] },
     inLanguage,
     publisher: { '@type': 'Organization', name: 'ABVX', url: 'https://abvx.xyz' },
+    ...(sameAs.length ? { sameAs } : {}),
+    offers: [
+      ...(book.downloadPdfUrl
+        ? [
+            {
+              '@type': 'Offer',
+              url: book.downloadPdfUrl,
+              price: '0',
+              priceCurrency: 'USD',
+              availability: 'https://schema.org/InStock',
+            },
+          ]
+        : []),
+      ...(book.readOnlineUrl
+        ? [
+            {
+              '@type': 'Offer',
+              url: book.readOnlineUrl,
+              price: '0',
+              priceCurrency: 'USD',
+              availability: 'https://schema.org/InStock',
+            },
+          ]
+        : []),
+    ],
   };
-
-  const identifier = identifiersFromBook(book);
-  if (identifier) common.identifier = identifier;
-  if (book.identifiers?.isbn13Print) common.isbn = book.identifiers.isbn13Print;
-
-  const sameAs = [book.amazonKindleUrl, book.amazonPrintUrl].filter(Boolean);
-  if (sameAs.length) common.sameAs = sameAs;
-
-  if (book.type === 'commercial') {
-    const offers = [
-      book.amazonKindleUrl
-        ? { '@type': 'Offer', url: book.amazonKindleUrl, availability: 'https://schema.org/InStock' }
-        : null,
-      book.amazonPrintUrl
-        ? { '@type': 'Offer', url: book.amazonPrintUrl, availability: 'https://schema.org/InStock' }
-        : null,
-    ].filter(Boolean);
-    if (offers.length) common.offers = offers;
-  } else {
-    const offers = [
-      book.downloadPdfUrl
-        ? {
-            '@type': 'Offer',
-            url: book.downloadPdfUrl,
-            price: '0',
-            priceCurrency: 'USD',
-            availability: 'https://schema.org/InStock',
-          }
-        : null,
-      book.downloadEpubUrl
-        ? {
-            '@type': 'Offer',
-            url: book.downloadEpubUrl,
-            price: '0',
-            priceCurrency: 'USD',
-            availability: 'https://schema.org/InStock',
-          }
-        : null,
-    ].filter(Boolean);
-    if (offers.length) common.offers = offers;
-  }
-
-  return common;
 }

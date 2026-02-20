@@ -1,7 +1,8 @@
+import LanguageSwitch from './LanguageSwitch';
 import styles from './Header.module.css';
 
-export default function Header({ lang }: { lang?: 'en' | 'tp' }) {
-  const homeHref = lang ? `/${lang}` : '/';
+export default function Header({ lang }: { lang: 'en' | 'tp' }) {
+  const homeHref = `/${lang}`;
 
   return (
     <header className={styles.header}>
@@ -9,24 +10,25 @@ export default function Header({ lang }: { lang?: 'en' | 'tp' }) {
         <div className={styles.brand}>
           <span className={styles.brandMark}>&gt;</span>
           <a href={homeHref} className={`${styles.brandTitle} ux-focus-ring`} style={{ textDecoration: 'none' }}>
-            toki pona - free kit
+            toki pona free kit
           </a>
         </div>
 
         <nav className={styles.nav} aria-label="Site navigation">
-          <a className={`${styles.navLink} ux-hover-btn ux-focus-ring`} href="#materials">
-            Материалы
+          <a className={`${styles.navLink} ux-hover-btn ux-focus-ring`} href={`${homeHref}#collection`}>
+            Free books
           </a>
-          <a className={`${styles.navLink} ux-hover-btn ux-focus-ring`} href="#how-to-use">
-            Как пользоваться
+          <a className={`${styles.navLink} ux-hover-btn ux-focus-ring`} href={`${homeHref}#faq`}>
+            FAQ
           </a>
-          <a className={`${styles.navLink} ux-hover-btn ux-focus-ring`} href="#feedback">
-            Как помочь
-          </a>
-          <a className={`${styles.navLink} ${styles.navLinkActive} ux-hover-btn ux-focus-ring`} href="https://toki.abvx.xyz/kit/">
-            Старый kit
+          <a className={`${styles.navLink} ux-hover-btn ux-focus-ring`} href="https://toki.abvx.xyz/kit/">
+            Legacy kit
           </a>
         </nav>
+
+        <div className={styles.actions}>
+          <LanguageSwitch currentLang={lang} />
+        </div>
       </div>
     </header>
   );

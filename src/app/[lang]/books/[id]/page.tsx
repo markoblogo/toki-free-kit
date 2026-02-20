@@ -30,24 +30,24 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   if (!book) return {};
 
   const localized = getLocalizedBook(dict, book, safeLang);
-  const title = `${localized.title} — Stoic Wisdom in toki pona`;
+  const title = `${localized.title} - toki pona free kit`;
   const description = localized.shortDesc;
-  const imageUrl = `https://stoic.abvx.xyz${book.promoImage || book.coverImage}`;
+  const imageUrl = `https://toki-free.abvx.xyz${book.promoImage || book.coverImage}`;
 
   return {
     title,
     description,
     alternates: {
-      canonical: `https://stoic.abvx.xyz/${safeLang}/books/${book.id}`,
+      canonical: `https://toki-free.abvx.xyz/${safeLang}/books/${book.id}`,
       languages: {
-        en: `https://stoic.abvx.xyz/en/books/${book.id}`,
-        ['tok' as any]: `https://stoic.abvx.xyz/tp/books/${book.id}`,
+        en: `https://toki-free.abvx.xyz/en/books/${book.id}`,
+        ['tok' as any]: `https://toki-free.abvx.xyz/tp/books/${book.id}`,
       } as any,
     },
     openGraph: {
       title,
       description,
-      url: `https://stoic.abvx.xyz/${safeLang}/books/${book.id}`,
+      url: `https://toki-free.abvx.xyz/${safeLang}/books/${book.id}`,
       type: 'book',
       images: [
         {
@@ -89,14 +89,7 @@ export default async function BookPage({ params }: { params: Promise<{ lang: str
 
         <div className={styles.hero}>
           <div className={`${styles.coverWrap} ux-hover-card`}>
-            <Image
-              src={book.coverImage}
-              alt={localized.title}
-              fill
-              className={styles.coverImg}
-              sizes="(max-width: 900px) 70vw, 420px"
-              priority
-            />
+            <Image src={book.coverImage} alt={localized.title} fill className={styles.coverImg} sizes="(max-width: 900px) 70vw, 420px" priority />
           </div>
 
           <div className={styles.content}>
@@ -105,45 +98,17 @@ export default async function BookPage({ params }: { params: Promise<{ lang: str
             <p className={styles.shortDesc}>{localized.shortDesc}</p>
 
             <div className={styles.actions}>
-              {book.type === 'gift' ? (
-                <>
-                  {book.downloadPdfUrl && (
-                    <a href={book.downloadPdfUrl} download className="btn btn-accent ux-hover-btn ux-focus-ring">
-                      {dict.hero.download_pdf}
-                    </a>
-                  )}
-                  {book.downloadEpubUrl && (
-                    <a href={book.downloadEpubUrl} download className="btn ux-hover-btn ux-focus-ring">
-                      {dict.hero.download_epub}
-                    </a>
-                  )}
-                </>
-              ) : (
-                <>
-                  {book.amazonKindleUrl && (
-                    <a href={book.amazonKindleUrl} target="_blank" rel="noopener" className="btn btn-accent ux-hover-btn ux-focus-ring">
-                      {dict.hero.buy_kindle}
-                    </a>
-                  )}
-                  {book.amazonPrintUrl && (
-                    <a href={book.amazonPrintUrl} target="_blank" rel="noopener" className="btn ux-hover-btn ux-focus-ring">
-                      {dict.hero.buy_print}
-                    </a>
-                  )}
-                </>
+              {book.downloadPdfUrl && (
+                <a href={book.downloadPdfUrl} className="btn btn-accent ux-hover-btn ux-focus-ring">
+                  {dict.hero.download_pdf}
+                </a>
+              )}
+              {book.readOnlineUrl && (
+                <a href={book.readOnlineUrl} className="btn ux-hover-btn ux-focus-ring">
+                  {dict.hero.read_online}
+                </a>
               )}
             </div>
-
-            {book.teaserVideoId && (
-              <a
-                href={`https://www.youtube.com/watch?v=${book.teaserVideoId}`}
-                target="_blank"
-                rel="noopener"
-                className={`${styles.teaserLink} ux-hover-btn ux-focus-ring`}
-              >
-                ▶ {dict.hero.watch_teaser}
-              </a>
-            )}
           </div>
         </div>
 
