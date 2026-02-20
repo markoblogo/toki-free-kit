@@ -27,6 +27,10 @@
   max-width: 600px;
 }
 
+.titleWrap {
+  position: relative;
+}
+
 .title {
   font-family: var(--font-serif);
   font-size: 3rem;
@@ -48,21 +52,15 @@
   font-size: 0.95rem;
 }
 
-.ctaRow {
-  margin-top: 1.75rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.8rem;
-}
-
 .rightCol {
   width: 100%;
-  position: relative;
 }
 
 .heroBadge {
-  top: -18px !important;
-  right: -10px !important;
+  left: -78px !important;
+  top: -28px !important;
+  right: auto !important;
+  transform: rotate(15deg) scale(1.7) !important;
 }
 
 .noteList {
