@@ -64,8 +64,8 @@
   position: absolute;
   z-index: 1;
   pointer-events: none;
-  left: -52px !important;
-  top: -14px !important;
+  left: -76px !important;
+  top: -28px !important;
   right: auto !important;
   transform: rotate(15deg) scale(1.5) !important;
 }
@@ -99,8 +99,8 @@
   }
 
   .heroBadge {
-    left: -18px !important;
-    top: -8px !important;
+    left: -30px !important;
+    top: -18px !important;
     transform: rotate(15deg) scale(1.1) !important;
   }
 
