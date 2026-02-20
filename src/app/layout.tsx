@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "Free toki pona learning materials and translations: starter kit, practice texts, and community resources.",
   metadataBase: new URL(siteUrl),
   alternates: {
-    canonical: "/",
+    canonical: siteUrl,
   },
   openGraph: {
     title: "toki pona - free kit",

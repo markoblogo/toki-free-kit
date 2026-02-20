@@ -1,6 +1,8 @@
 import styles from './Footer.module.css';
 
 export default function Footer({ dict, lang }: { dict?: unknown; lang?: 'en' | 'tp' }) {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className={styles.footer}>
       <div className={`container ${styles.container}`}>
@@ -15,7 +17,7 @@ export default function Footer({ dict, lang }: { dict?: unknown; lang?: 'en' | '
 
             <div className={styles.legalRow}>
               <a href="https://toki-free.abvx.xyz" className={`${styles.copyright} ux-hover-btn ux-focus-ring`}>
-                © 2026 toki-free.abvx.xyz
+                © {currentYear} toki-free.abvx.xyz
               </a>
               <div className={styles.legalLinks}>
                 <span className={styles.legalLink}>License: TODO</span>
