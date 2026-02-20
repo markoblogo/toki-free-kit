@@ -60,6 +60,7 @@
     /* Ensure full visibility - no cropping */
     width: 100%;
     height: 100%;
+    z-index: 1;
     transition: transform 0.4s ease;
 }
 
@@ -105,9 +106,11 @@
 
 /* Badge specific to section if needed */
 .sectionBadge {
-    top: -20px !important;
-    right: 0 !important;
+    top: 14px !important;
+    right: 14px !important;
     left: auto !important;
+    z-index: 2 !important;
+    pointer-events: none;
     transform: rotate(15deg) !important;
 }
 
@@ -258,9 +261,8 @@
     }
 
     .sectionBadge {
-        /* Adjust for mobile layout if needed */
-        top: -15px !important;
-        right: -10px !important;
+        top: 12px !important;
+        right: 12px !important;
         width: 70px !important;
         height: 70px !important;
         font-size: 0.8rem !important;

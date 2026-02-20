@@ -37,6 +37,7 @@ export default function BookSection({ book, dict, isLast }: BookSectionProps) {
               }
             }}
           >
+            <GiftBadge label="FREE" className={styles.sectionBadge} />
             <Image src={book.promoImage} alt={`Promo for ${title}`} fill className={styles.promoImg} sizes="(max-width: 768px) 100vw, 50vw" />
             <div className={styles.zoomHint}>🔍</div>
           </div>
@@ -44,7 +45,6 @@ export default function BookSection({ book, dict, isLast }: BookSectionProps) {
 
         <div className={styles.contentCol}>
           <header className={styles.header}>
-            <GiftBadge label="FREE" className={styles.sectionBadge} />
             <h2 className={styles.title}>{title}</h2>
           </header>
 
