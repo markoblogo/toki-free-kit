@@ -36,13 +36,11 @@ function Banner({ href, title, subtitle, variant, iconText = '>', thumbSrc }: Ba
   );
 }
 
-export default function Footer({ dict, lang: _lang }: { dict: any; lang: 'en' | 'tp' }) {
+export default function Footer({ dict, lang }: { dict: any; lang: 'en' | 'tp' }) {
   const socialMedium = 'https://abvcreative.medium.com/';
   const socialSubstack = 'https://abvx.substack.com/';
   const socialGitHub = 'https://github.com/markoblogo';
   const projectUrl = 'https://abvx.xyz/';
-  const legalUrl = 'https://stoic.abvx.xyz/en/legal';
-  const privacyUrl = 'https://stoic.abvx.xyz/en/privacy';
   const mailto = 'mailto:a.biletskyi@gmail.com?subject=toki%20pona%20free%20kit';
   const emailDisplay = 'a.biletskyi@gmail.com';
 
@@ -73,10 +71,10 @@ export default function Footer({ dict, lang: _lang }: { dict: any; lang: 'en' | 
                 © 2026 ABVX.xyz
               </a>
               <div className={styles.legalLinks}>
-                <Link href={legalUrl} className={`${styles.legalLink} ux-hover-btn ux-focus-ring`} target="_blank">
+                <Link href={`/${lang}/legal`} className={`${styles.legalLink} ux-hover-btn ux-focus-ring`}>
                   {dict?.footer?.legal_mentions ?? 'Legal'}
                 </Link>
-                <Link href={privacyUrl} className={`${styles.legalLink} ux-hover-btn ux-focus-ring`} target="_blank">
+                <Link href={`/${lang}/privacy`} className={`${styles.legalLink} ux-hover-btn ux-focus-ring`}>
                   {dict?.footer?.privacy_policy ?? 'Privacy'}
                 </Link>
               </div>
