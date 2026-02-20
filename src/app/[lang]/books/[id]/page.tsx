@@ -105,11 +105,6 @@ export default async function BookPage({ params }: { params: Promise<{ lang: str
                   {dict.hero.download_pdf}
                 </a>
               )}
-              {book.readOnlineUrl && (
-                <a href={book.readOnlineUrl} className="btn ux-hover-btn ux-focus-ring">
-                  {dict.hero.read_online}
-                </a>
-              )}
               {book.teaserVideoId && (
                 <a
                   href={`https://www.youtube.com/watch?v=${book.teaserVideoId}`}
@@ -120,15 +115,11 @@ export default async function BookPage({ params }: { params: Promise<{ lang: str
                   {dict.hero.watch_teaser}
                 </a>
               )}
-              <Link href={`/${safeLang}#${book.id}`} className="btn ux-hover-btn ux-focus-ring">
-                {dict?.hero?.back ?? 'Back'}
-              </Link>
             </div>
           </div>
         </div>
 
         <div className={styles.longDesc}>
-          <h2 className={styles.sectionTitle}>{dict?.collection?.learn_more ?? 'Learn more'}</h2>
           {localized.paragraphs.length > 0 ? (
             localized.paragraphs.map((paragraph: string, index: number) => <p key={index}>{paragraph}</p>)
           ) : (
