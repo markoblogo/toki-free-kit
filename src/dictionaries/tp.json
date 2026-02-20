@@ -8,10 +8,10 @@
     "brand": "kulupu lipu pi toki pona",
     "lang": "EN / TP",
     "nav": {
-      "translator": "Translator",
-      "learn": "Learn",
+      "translator": "ante toki",
+      "learn": "kama sona",
       "toki_stoic": "Toki Stoic",
-      "faq": "FAQ",
+      "faq": "sona lili",
       "legacy": "legacy"
     }
   },
@@ -47,24 +47,26 @@
   "collection": {
     "title": "lipu free",
     "subtitle": "lipu tu wan pi open: o kama sona e toki pona kepeken lipu lon nasin pona.",
-    "learn_more": "o sona",
+    "learn_more": "o sona"
+  },
+  "books": {
     "readers-kit": {
-      "title": "Reader’s Kit",
+      "title": "lipu pi kama sona tawa lukin (Reader’s Kit)",
       "author": "jan ABVX",
-      "shortDesc": "lipu ni li lipu pi open tawa jan pi kama sona.",
-      "longDesc": "nasin lipu li pona tawa lukin sin en kama sona nimi."
+      "summary": "lipu pi open tawa jan sin: o kama sona e toki pona kepeken lukin pi lipu lili.",
+      "notes": "lipu ni li lipu pi open tawa jan pi kama sona. nasin lipu li pona tawa lukin sin en kama sona nimi."
     },
     "chinese-wisdom": {
-      "title": "Chinese Wisdom",
+      "title": "sona pi ma Sonko (Chinese Wisdom)",
       "author": "jan ABVX",
-      "shortDesc": "lipu free ni li ante e toki pi lipu sinpin lon toki pona.",
-      "longDesc": "nasin sitelen li sama lon lipu ale, la sina ken lukin sin lon pona."
+      "summary": "lipu free pi toki lili sinpin, ante tawa toki pona, tawa lukin sin.",
+      "notes": "lipu ni li pali tawa kama sona: nasin sitelen li sama lon lipu ale, la sina ken weka e wile pi alasa sona ike, o lukin taso, o lukin sin."
     },
     "heart-sutra": {
-      "title": "Heart Sutra",
+      "title": "lipu 'Heart Sutra' lon toki pona",
       "author": "jan ABVX",
-      "shortDesc": "lipu ni li toki ante free tawa lukin en kama sona.",
-      "longDesc": "lipu ni li lili, la ona li pona tawa lukin sin lon tenpo mute."
+      "summary": "toki ante free tawa lukin sin en kama sona; lipu lili tawa lukin mute.",
+      "notes": "lipu ni li lili, la ona li pona tawa lukin sin lon tenpo mute."
     }
   },
   "faq": {
@@ -150,17 +152,17 @@
     "legal_mentions": "nasin",
     "privacy_policy": "len",
     "banners": {
-      "reader": {
-        "title": "Reader's Kit",
-        "subtitle": "lipu open free."
+      "translator": {
+        "title": "ante toki pona",
+        "subtitle": "o ante e toki tawa toki pona."
       },
-      "chinese": {
-        "title": "Chinese Wisdom",
-        "subtitle": "lipu free pi lukin tu."
+      "learn": {
+        "title": "o kama sona e toki pona",
+        "subtitle": "nasin kama sona en ilo lipu."
       },
-      "sutra": {
-        "title": "Heart Sutra",
-        "subtitle": "toki ante free."
+      "stoic": {
+        "title": "Stoic Wisdom lon toki pona",
+        "subtitle": "tomo sinpin pi sona stoic."
       }
     },
     "back_home": "o tawa"

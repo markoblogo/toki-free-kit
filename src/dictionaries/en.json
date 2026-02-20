@@ -47,24 +47,26 @@
   "collection": {
     "title": "Free books",
     "subtitle": "Three free entries to start reading toki pona with real texts and parallel layouts.",
-    "learn_more": "Learn more",
+    "learn_more": "Learn more"
+  },
+  "books": {
     "readers-kit": {
       "title": "The Toki Pona Reader's Kit",
       "author": "ABVX",
-      "shortDesc": "Beginner-friendly entry to reading toki pona through short, real texts.",
-      "longDesc": "A practical free starter pack for reading and learning toki pona."
+      "summary": "Beginner-friendly entry to reading toki pona through short, real texts.",
+      "notes": "A practical free starter pack for reading and learning toki pona."
     },
     "chinese-wisdom": {
       "title": "Chinese Wisdom in toki pona",
       "author": "ABVX",
-      "shortDesc": "A free kit with short classical passages in a calm toki pona format.",
-      "longDesc": "An accessible step after the Reader's Kit, with repeatable practice-oriented layouts."
+      "summary": "A free kit with short classical passages in a calm toki pona format.",
+      "notes": "An accessible step after the Reader's Kit, with repeatable practice-oriented layouts."
     },
     "heart-sutra": {
       "title": "Heart Sutra in toki pona",
       "author": "ABVX",
-      "shortDesc": "A compact free translation track for repeated reading and study.",
-      "longDesc": "Built for memorization-free comprehension through slow repetition and stable layout."
+      "summary": "A compact free translation track for repeated reading and study.",
+      "notes": "Built for memorization-free comprehension through slow repetition and stable layout."
     }
   },
   "faq": {
@@ -150,17 +152,17 @@
     "legal_mentions": "Legal",
     "privacy_policy": "Privacy",
     "banners": {
-      "reader": {
-        "title": "Reader's Kit",
-        "subtitle": "Beginner-friendly free entry."
+      "translator": {
+        "title": "Toki Pona Translator",
+        "subtitle": "Translate into toki pona."
       },
-      "chinese": {
-        "title": "Chinese Wisdom",
-        "subtitle": "Free parallel reading kit."
+      "learn": {
+        "title": "Learn Toki Pona",
+        "subtitle": "Courses and learning resources."
       },
-      "sutra": {
-        "title": "Heart Sutra",
-        "subtitle": "Free translation track."
+      "stoic": {
+        "title": "Stoic Wisdom in Toki Pona",
+        "subtitle": "Main stoic landing."
       }
     },
     "back_home": "Back"

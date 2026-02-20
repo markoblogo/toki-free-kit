@@ -15,11 +15,10 @@ interface BookSectionProps {
 export default function BookSection({ book, dict, isLast }: BookSectionProps) {
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
   const lang = dict.lang || 'en';
-  const localizedBook = dict.collection[book.id];
-
-  const title = localizedBook?.title || book.title[lang as keyof typeof book.title] || book.title.en;
-  const shortDesc = localizedBook?.shortDesc || book.shortDescription[lang as keyof typeof book.shortDescription] || book.shortDescription.en;
-  const longDesc = localizedBook?.longDesc || book.longDescription[lang as keyof typeof book.longDescription] || book.longDescription.en;
+  const localizedBook = dict.books?.[book.id];
+  const title = localizedBook?.title ?? book.id;
+  const shortDesc = localizedBook?.summary ?? '';
+  const longDesc = localizedBook?.notes ?? '';
 
   return (
     <section id={book.id} className={`${styles.section} ${isLast ? styles.lastSection : ''}`}>
