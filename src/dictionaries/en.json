@@ -8,10 +8,11 @@
     "brand": "toki pona free kit",
     "lang": "EN / TP",
     "nav": {
-      "free_books": "Free books",
+      "translator": "Translator",
+      "learn": "Learn",
+      "toki_stoic": "Toki Stoic",
       "faq": "FAQ",
-      "legacy": "Legacy kit",
-      "current": "Free kit"
+      "legacy": "Legacy kit"
     }
   },
   "hero": {

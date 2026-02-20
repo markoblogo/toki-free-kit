@@ -8,10 +8,11 @@
     "brand": "kulupu lipu pi toki pona",
     "lang": "EN / TP",
     "nav": {
-      "free_books": "lipu free",
+      "translator": "Translator",
+      "learn": "Learn",
+      "toki_stoic": "Toki Stoic",
       "faq": "FAQ",
-      "legacy": "legacy",
-      "current": "free kit"
+      "legacy": "legacy"
     }
   },
   "hero": {

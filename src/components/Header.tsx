@@ -15,17 +15,17 @@ export default function Header({ lang, dict }: { lang: 'en' | 'tp'; dict?: any }
         </div>
 
         <nav className={styles.nav} aria-label="Site navigation">
-          <a className={`${styles.navLink} ux-hover-btn ux-focus-ring`} href={`${pageHref}#collection`}>
-            {dict?.header?.nav?.free_books ?? 'Free books'}
+          <a className={`${styles.navLink} ux-hover-btn ux-focus-ring`} href="https://toki.abvx.xyz/" target="_blank" rel="noopener noreferrer">
+            {dict?.header?.nav?.translator ?? 'Translator'}
           </a>
-          <a className={`${styles.navLink} ux-hover-btn ux-focus-ring`} href={`${pageHref}#faq`}>
+          <a className={`${styles.navLink} ux-hover-btn ux-focus-ring`} href="https://toki.abvx.xyz/learn" target="_blank" rel="noopener noreferrer">
+            {dict?.header?.nav?.learn ?? 'Learn'}
+          </a>
+          <a className={`${styles.navLink} ux-hover-btn ux-focus-ring`} href="https://stoic.abvx.xyz/" target="_blank" rel="noopener noreferrer">
+            {dict?.header?.nav?.toki_stoic ?? 'Toki Stoic'}
+          </a>
+          <a className={`${styles.navLink} ${styles.navLinkActive} ux-hover-btn ux-focus-ring`} href={`${pageHref}#faq`}>
             {dict?.header?.nav?.faq ?? 'FAQ'}
-          </a>
-          <a className={`${styles.navLink} ux-hover-btn ux-focus-ring`} href="https://toki.abvx.xyz/kit/" target="_blank" rel="noopener noreferrer">
-            {dict?.header?.nav?.legacy ?? 'Legacy kit'}
-          </a>
-          <a className={`${styles.navLink} ${styles.navLinkActive} ux-hover-btn ux-focus-ring`} href={pageHref}>
-            {dict?.header?.nav?.current ?? 'Free kit'}
           </a>
         </nav>
 
