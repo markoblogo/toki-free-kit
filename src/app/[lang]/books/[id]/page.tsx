@@ -4,17 +4,17 @@ import { notFound } from 'next/navigation';
 import { books } from '@/data/books';
 import { getDictionary } from '@/get-dictionary';
 import styles from './page.module.css';
-import { jsonLdForBook } from '@/lib/jsonld';
+import { jsonLdForBookLocalized } from '@/lib/jsonld';
 import Script from 'next/script';
 
 function getLocalizedBook(dict: any, book: (typeof books)[number], lang: 'en' | 'tp') {
-  const localized = dict?.collection?.[book.id];
+  const localized = dict?.books?.[book.id];
   const paragraphs = dict?.bookPages?.[book.id]?.paragraphs;
   return {
-    title: localized?.title || book.title[lang] || book.title.en,
-    author: localized?.author || book.author[lang] || book.author.en,
-    shortDesc: localized?.shortDesc || book.shortDescription[lang] || book.shortDescription.en,
-    longDesc: localized?.longDesc || book.longDescription[lang] || book.longDescription.en,
+    title: localized?.title || book.id,
+    author: localized?.author || 'ABVX',
+    shortDesc: localized?.summary || '',
+    longDesc: localized?.notes || '',
     paragraphs: Array.isArray(paragraphs) ? paragraphs : [],
   };
 }
@@ -78,7 +78,10 @@ export default async function BookPage({ params }: { params: Promise<{ lang: str
   if (!book) return notFound();
 
   const localized = getLocalizedBook(dict, book, safeLang);
-  const jsonLd = jsonLdForBook(safeLang, book);
+  const jsonLd = jsonLdForBookLocalized(safeLang, book, {
+    title: localized.title,
+    author: localized.author,
+  });
 
   return (
     <main className={styles.page}>

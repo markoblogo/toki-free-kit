@@ -1,8 +1,30 @@
-import type { Book } from './books';
+type LocalizedString = {
+  en: string;
+  tp: string;
+};
+
+type MoreBook = {
+  id: string;
+  type: 'commercial' | 'gift';
+  title: LocalizedString;
+  author: LocalizedString;
+  coverImage: string;
+  promoImage: string;
+  amazonKindleUrl?: string;
+  amazonPrintUrl?: string;
+  teaserVideoId?: string;
+  identifiers?: {
+    asinKindle?: string;
+    asinPrint?: string;
+    isbn13Print?: string;
+  };
+  shortDescription: LocalizedString;
+  longDescription: LocalizedString;
+};
 
 // Additional Toki Pona-related books by the author (not part of the Stoic series).
 // Used for SEO (JSON-LD) and internal linking context.
-export const moreBooks: Book[] = [
+export const moreBooks: MoreBook[] = [
   {
     id: 'dao-de-jing',
     type: 'commercial',

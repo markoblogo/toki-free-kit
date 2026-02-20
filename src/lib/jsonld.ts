@@ -38,6 +38,17 @@ export function seriesJsonLd(lang: 'en' | 'tp') {
 }
 
 export function jsonLdForBook(lang: 'en' | 'tp', book: Book) {
+  return jsonLdForBookLocalized(lang, book, {
+    title: book.id,
+    author: 'ABVX',
+  });
+}
+
+export function jsonLdForBookLocalized(
+  lang: 'en' | 'tp',
+  book: Book,
+  localized: { title: string; author: string },
+) {
   const inLanguage = lang === 'tp' ? 'tok' : 'en';
 
   const sameAs = [book.downloadPdfUrl, book.readOnlineUrl].filter(Boolean);
@@ -46,8 +57,8 @@ export function jsonLdForBook(lang: 'en' | 'tp', book: Book) {
     '@context': 'https://schema.org',
     '@type': 'Book',
     '@id': `${SITE_URL}/${lang}#${book.id}`,
-    name: book.title[lang],
-    author: { '@type': 'Person', name: book.author[lang] },
+    name: localized.title,
+    author: { '@type': 'Person', name: localized.author },
     inLanguage,
     publisher: { '@type': 'Organization', name: 'ABVX', url: 'https://abvx.xyz' },
     ...(sameAs.length ? { sameAs } : {}),

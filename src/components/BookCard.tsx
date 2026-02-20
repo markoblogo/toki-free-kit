@@ -14,12 +14,11 @@ interface BookCardProps {
 export default function BookCard({ book, dict, lang }: BookCardProps) {
     const [isExpanded, setIsExpanded] = useState(false);
 
-    const title = book.title[lang as keyof typeof book.title];
-    const author = book.author[lang as keyof typeof book.author];
-    const shortDesc = book.shortDescription[lang as keyof typeof book.shortDescription];
-    const longDesc = book.longDescription[lang as keyof typeof book.longDescription];
-
-    const paperSoonText = lang === 'tp' ? 'kama sona' : 'soon';
+    const localized = dict?.books?.[book.id] ?? {};
+    const title = localized.title ?? book.id;
+    const author = localized.author ?? '';
+    const shortDesc = localized.summary ?? '';
+    const longDesc = localized.notes ?? '';
 
     return (
         <div className={`${styles.card} ux-hover-card`} id={book.id}>
@@ -42,24 +41,10 @@ export default function BookCard({ book, dict, lang }: BookCardProps) {
 
                 <div className={styles.actions}>
                     <div className={styles.amazonGroup}>
-                        {book.type === 'gift' ? (
-                            <>
-                                <a href={book.downloadPdfUrl} download className={`${styles.buyBtn} ux-hover-btn ux-focus-ring`}>
-                                    {dict.hero.download_pdf}
-                                </a>
-                                <a href={book.downloadEpubUrl} download className={`${styles.printBtn} ux-hover-btn ux-focus-ring`}>
-                                    {dict.hero.download_epub}
-                                </a>
-                            </>
-                        ) : (
-                            <>
-                                <a href={book.amazonKindleUrl} target="_blank" rel="noopener noreferrer" className={`${styles.buyBtn} ux-hover-btn ux-focus-ring`}>
-                                    {dict.hero.buy_kindle}
-                                </a>
-                                <a href={book.amazonPrintUrl} target="_blank" rel="noopener noreferrer" className={`${styles.printBtn} ux-hover-btn ux-focus-ring`}>
-                                    {dict.hero.buy_print}
-                                </a>
-                            </>
+                        {book.downloadPdfUrl && (
+                            <a href={book.downloadPdfUrl} className={`${styles.buyBtn} ux-hover-btn ux-focus-ring`}>
+                                {dict.hero.download_pdf}
+                            </a>
                         )}
                     </div>
                     <button

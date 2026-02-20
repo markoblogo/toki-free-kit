@@ -8,7 +8,7 @@ import Footer from '@/components/Footer';
 import FAQ from '@/components/FAQ';
 import styles from './page.module.css';
 import { books } from '@/data/books';
-import { orgJsonLd, seriesJsonLd, websiteJsonLd, jsonLdForBook } from '@/lib/jsonld';
+import { orgJsonLd, seriesJsonLd, websiteJsonLd, jsonLdForBookLocalized } from '@/lib/jsonld';
 
 export default async function Page({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
@@ -17,7 +17,17 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
 
   const graph = {
     '@context': 'https://schema.org',
-    '@graph': [orgJsonLd(), websiteJsonLd(validLang), seriesJsonLd(validLang), ...books.map((b) => jsonLdForBook(validLang, b))],
+    '@graph': [
+      orgJsonLd(),
+      websiteJsonLd(validLang),
+      seriesJsonLd(validLang),
+      ...books.map((b) =>
+        jsonLdForBookLocalized(validLang, b, {
+          title: (dict?.books as Record<string, any> | undefined)?.[b.id]?.title ?? b.id,
+          author: (dict?.books as Record<string, any> | undefined)?.[b.id]?.author ?? 'ABVX',
+        }),
+      ),
+    ],
   };
 
   const faqItems = (dict?.faq?.items ?? []).map((item: any) => ({
