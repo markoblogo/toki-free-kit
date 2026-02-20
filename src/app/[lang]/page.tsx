@@ -40,7 +40,7 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
     <main className={styles.main}>
       <Script id="jsonld-toki-free" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }} />
 
-      <Header lang={validLang} />
+      <Header lang={validLang} dict={dict} />
       <Hero dict={dict} lang={validLang} />
       <WhySection dict={dict} />
       <BookList dict={dict} />
