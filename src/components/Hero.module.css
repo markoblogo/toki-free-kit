@@ -29,8 +29,8 @@
 
 .titleWrap {
   position: relative;
-  /* Reserve space for the sticker so first letters stay readable */
-  padding-left: 6.5rem;
+  /* Keep title readable while preserving slight sticker overlap */
+  padding-left: 5rem;
 }
 
 .title {
@@ -64,10 +64,10 @@
   position: absolute;
   z-index: 1;
   pointer-events: none;
-  left: 0 !important;
-  top: -12px !important;
+  left: -52px !important;
+  top: -14px !important;
   right: auto !important;
-  transform: rotate(15deg) scale(1.65) !important;
+  transform: rotate(15deg) scale(1.5) !important;
 }
 
 .noteList {
@@ -99,12 +99,12 @@
   }
 
   .heroBadge {
-    left: -4px !important;
-    top: -6px !important;
-    transform: rotate(15deg) scale(1.25) !important;
+    left: -18px !important;
+    top: -8px !important;
+    transform: rotate(15deg) scale(1.1) !important;
   }
 
   .titleWrap {
-    padding-left: 3.4rem;
+    padding-left: 2.6rem;
   }
 }
