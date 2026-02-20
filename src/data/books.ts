@@ -30,8 +30,8 @@ export const books: Book[] = [
     id: 'readers-kit',
     type: 'gift',
     title: {
-      en: 'The Toki Pona Reader\'s Kit (Free)',
-      tp: 'ilo lipu pi toki pona (mani ala)',
+      en: 'The Toki Pona Reader\'s Kit',
+      tp: 'Reader’s Kit',
     },
     author: {
       en: 'ABVX',
@@ -55,7 +55,7 @@ export const books: Book[] = [
     id: 'chinese-wisdom',
     type: 'gift',
     title: {
-      en: 'Chinese Wisdom in toki pona (Free Kit)',
+      en: 'Chinese Wisdom in toki pona',
       tp: 'sona Sina lon toki pona (ilo pi mani ala)',
     },
     author: {
@@ -80,8 +80,8 @@ export const books: Book[] = [
     id: 'heart-sutra',
     type: 'gift',
     title: {
-      en: 'Heart Sutra in toki pona (Free Translation)',
-      tp: 'Heart Sutra lon toki pona (ante toki pi mani ala)',
+      en: 'Heart Sutra in toki pona',
+      tp: 'Heart Sutra lon toki pona',
     },
     author: {
       en: 'ABVX',

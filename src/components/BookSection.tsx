@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { Book } from '@/data/books';
 import styles from './BookSection.module.css';
+import GiftBadge from './GiftBadge';
 
 interface BookSectionProps {
   book: Book;
@@ -17,7 +18,6 @@ export default function BookSection({ book, dict, isLast }: BookSectionProps) {
   const localizedBook = dict.collection[book.id];
 
   const title = localizedBook?.title || book.title[lang as keyof typeof book.title] || book.title.en;
-  const author = localizedBook?.author || book.author[lang as keyof typeof book.author] || book.author.en;
   const shortDesc = localizedBook?.shortDesc || book.shortDescription[lang as keyof typeof book.shortDescription] || book.shortDescription.en;
   const longDesc = localizedBook?.longDesc || book.longDescription[lang as keyof typeof book.longDescription] || book.longDescription.en;
 
@@ -45,8 +45,8 @@ export default function BookSection({ book, dict, isLast }: BookSectionProps) {
 
         <div className={styles.contentCol}>
           <header className={styles.header}>
+            <GiftBadge label="FREE" className={styles.sectionBadge} />
             <h2 className={styles.title}>{title}</h2>
-            <p className={styles.author}>{author}</p>
           </header>
 
           <div className={styles.desc}>
@@ -59,11 +59,6 @@ export default function BookSection({ book, dict, isLast }: BookSectionProps) {
               {book.downloadPdfUrl && (
                 <a href={book.downloadPdfUrl} className="btn btn-accent ux-hover-btn ux-focus-ring">
                   {dict.hero.download_pdf}
-                </a>
-              )}
-              {book.readOnlineUrl && (
-                <a href={book.readOnlineUrl} className="btn ux-hover-btn ux-focus-ring">
-                  {dict.hero.read_online}
                 </a>
               )}
             </div>
