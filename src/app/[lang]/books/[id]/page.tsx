@@ -109,6 +109,17 @@ export default async function BookPage({ params }: { params: Promise<{ lang: str
                 </a>
               )}
             </div>
+
+            {book.teaserVideoId && (
+              <a
+                href={`https://www.youtube.com/watch?v=${book.teaserVideoId}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${styles.teaserLink} ux-hover-btn ux-focus-ring`}
+              >
+                ▶ {dict.hero.watch_teaser}
+              </a>
+            )}
           </div>
         </div>
 

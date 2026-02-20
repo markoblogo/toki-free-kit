@@ -40,6 +40,7 @@ export const books: Book[] = [
     coverImage: '/books/reader-kit/cover.jpg',
     promoImage: '/books/reader-kit/promo.jpg',
     downloadPdfUrl: '/books/reader-kit/reader-kit.pdf',
+    teaserVideoId: 'F7fSBElppzI',
     shortDescription: {
       en: 'A practical free starter pack for reading and learning toki pona.',
       tp: 'ilo open ni li pona tawa kama sona pi toki pona.',
@@ -63,6 +64,7 @@ export const books: Book[] = [
     coverImage: '/books/chinese-wisdom/cover.jpg',
     promoImage: '/books/chinese-wisdom/promo.png',
     downloadPdfUrl: '/books/chinese-wisdom/chinese-wisdom.pdf',
+    teaserVideoId: 'BOVyG1jP580',
     shortDescription: {
       en: 'A free reading kit for Chinese classics adapted to toki pona learning flow.',
       tp: 'ilo ni li pana e lipu open pi sona Sina lon nasin kama sona toki pona.',
@@ -86,6 +88,7 @@ export const books: Book[] = [
     coverImage: '/books/heart-sutra/cover.png',
     promoImage: '/books/heart-sutra/promo.jpg',
     downloadPdfUrl: '/books/heart-sutra/heart-sutra.pdf',
+    teaserVideoId: '5q0eaRllDJQ',
     shortDescription: {
       en: 'A free toki pona translation track for Heart Sutra reading and study.',
       tp: 'lipu ni li ante toki pi mani ala tawa lukin Heart Sutra lon toki pona.',

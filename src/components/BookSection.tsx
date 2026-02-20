@@ -71,6 +71,16 @@ export default function BookSection({ book, dict, isLast }: BookSectionProps) {
             </div>
 
             <div className={styles.secondaryLinks}>
+              {book.teaserVideoId && (
+                <a
+                  href={`https://www.youtube.com/watch?v=${book.teaserVideoId}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${styles.teaserLink} ux-hover-btn ux-focus-ring`}
+                >
+                  ▶ {dict.hero.watch_teaser}
+                </a>
+              )}
               <a href={`/${lang}/books/${book.id}`} className={`${styles.detailsLink} ux-hover-btn ux-focus-ring`}>
                 {dict.collection.learn_more}
               </a>
