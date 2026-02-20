@@ -53,20 +53,20 @@
     "readers-kit": {
       "title": "lipu pi kama sona tawa lukin (Reader’s Kit)",
       "author": "jan ABVX",
-      "summary": "lipu pi open tawa jan sin: o kama sona e toki pona kepeken lukin pi lipu lili.",
-      "notes": "lipu ni li lipu pi open tawa jan pi kama sona. nasin lipu li pona tawa lukin sin en kama sona nimi."
+      "summary": "lipu ni li kit free tan kulupu \"Stoic Wisdom in toki pona\". ona li jo e lipu ale pi \"Golden Verses\" pi jan Pita-ka (Pythagoras) lon toki pona, lon sitelen Latin en sitelen pona-ready. nasin lipu li sama kulupu: o lukin lili, o lukin sin, o kama sona.",
+      "notes": "ijo insa: \"Golden Verses\" (ale), sitelen Latin + sitelen pona-ready, nasin sama kulupu Stoic."
     },
     "chinese-wisdom": {
       "title": "sona pi ma Sonko (Chinese Wisdom)",
       "author": "jan ABVX",
-      "summary": "lipu free pi toki lili sinpin, ante tawa toki pona, tawa lukin sin.",
-      "notes": "lipu ni li pali tawa kama sona: nasin sitelen li sama lon lipu ale, la sina ken weka e wile pi alasa sona ike, o lukin taso, o lukin sin."
+      "summary": "lipu ni li kit free pi kulupu \"Chinese Wisdom in toki pona\". ona li pana e nasin sama tawa lipu lon kulupu (sama \"Art of War\", \"Dao De Jing\"), en ona li jo e toki ante ale pi \"Mozi: Universal Love\" lon toki pona. nasin sitelen li pona tawa lukin sin en kama sona.",
+      "notes": "ijo insa: \"Mozi — Universal Love\" (ale), nasin preview pi kulupu, nasin lukin pi pona."
     },
     "heart-sutra": {
       "title": "lipu 'Heart Sutra' lon toki pona",
       "author": "jan ABVX",
-      "summary": "toki ante free tawa lukin sin en kama sona; lipu lili tawa lukin mute.",
-      "notes": "lipu ni li lili, la ona li pona tawa lukin sin lon tenpo mute."
+      "summary": "lipu \"Heart Sutra\" ni li toki ante free, li kama sama pana sona lon kulupu \"Chinese Wisdom\". lipu ni li jo e sitelen Sonko (Chinese), toki Inli, toki pona, en sitelen pona-ready, tawa lukin sin lon tenpo mute. lipu lili la ona li pona tawa pali pi tenpo ale.",
+      "notes": "ijo insa: sitelen Sonko + toki Inli + toki pona + sitelen pona-ready."
     }
   },
   "faq": {

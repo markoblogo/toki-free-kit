@@ -141,8 +141,11 @@
 }
 
 .longDesc {
-    /* No longer hidden */
     display: block;
+    margin-top: 0.35rem;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    opacity: 0.72;
 }
 
 /* Actions */

@@ -53,20 +53,20 @@
     "readers-kit": {
       "title": "The Toki Pona Reader's Kit",
       "author": "ABVX",
-      "summary": "Beginner-friendly entry to reading toki pona through short, real texts.",
-      "notes": "A practical free starter pack for reading and learning toki pona."
+      "summary": "A free starter kit built from texts in the Stoic Wisdom in toki pona series. It includes a complete toki pona translation of The Golden Verses of Pythagoras in both Latin script and sitelen-pona-ready layout, plus a consistent reading format designed for repeatable practice. Use it as the quickest entry point before moving into the full series.",
+      "notes": "Includes: The Golden Verses of Pythagoras (full text), Latin toki pona + sitelen-ready duplicate, series-style layout."
     },
     "chinese-wisdom": {
       "title": "Chinese Wisdom in toki pona",
       "author": "ABVX",
-      "summary": "A free kit with short classical passages in a calm toki pona format.",
-      "notes": "An accessible step after the Reader's Kit, with repeatable practice-oriented layouts."
+      "summary": "A free entry kit that previews the Chinese Wisdom in toki pona series and its reading format. Built on the same approach used for the series texts (for example The Art of War and Dao De Jing), and includes a full toki pona translation of Mozi: Universal Love with a parallel, practice-friendly layout. Ideal as the second step after the Reader's Kit.",
+      "notes": "Includes: Mozi — Universal Love (full text), series preview format, parallel reading layout."
     },
     "heart-sutra": {
       "title": "Heart Sutra in toki pona",
       "author": "ABVX",
-      "summary": "A compact free translation track for repeated reading and study.",
-      "notes": "Built for memorization-free comprehension through slow repetition and stable layout."
+      "summary": "A free bonus translation released alongside the Chinese Wisdom in toki pona series. The edition is structured for study: original Chinese text, an English reference, toki pona translation, and a sitelen-pona-ready version, all designed for slow, repeatable reading. A compact text that works well as a daily practice piece.",
+      "notes": "Includes: Chinese original + English reference + toki pona + sitelen-ready duplicate."
     }
   },
   "faq": {
