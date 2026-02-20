@@ -1,90 +1,57 @@
-# Stoic Wisdom Series — Landing
+# toki pona free kit + free translations
 
-[![Live](https://img.shields.io/badge/Live-stoic.abvx.xyz-2ea44f)](https://stoic.abvx.xyz)
-![Next.js](https://img.shields.io/badge/Next.js-App%20Router-black)
-![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue)
-[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+Live: https://toki-free.abvx.xyz/en (EN) · https://toki-free.abvx.xyz/tp (TP)
 
-## Live
-https://stoic.abvx.xyz
+A small bilingual landing page that collects free toki pona reader kits and free translations, with direct downloads, teasers, and “learn more” pages for SEO.
 
-**License:** MIT. See [LICENSE](LICENSE).
+## What’s included
 
-Bilingual landing page (**English / toki pona**) for the *Stoic Wisdom Series*: classic Stoic texts reimagined in **toki pona**, with **sitelen pona** alongside Latin script.
+- **The Toki Pona Reader’s Kit** — a free starter kit built from texts used in the Stoic Wisdom in toki pona project (includes *The Golden Verses of Pythagoras*).
+- **Chinese Wisdom in toki pona (Free Kit)** — a free entry kit that previews the Chinese Wisdom in toki pona series (includes *Mozi: Universal Love*).
+- **Heart Sutra in toki pona (Free Translation)** — a free bonus translation edition (Chinese original + English reference + toki pona + sitelen-ready layout).
 
-Current catalog on the landing:
-- **Meditations of Marcus Aurelius — in Toki Pona** (Kindle + paperback)
-- **The Toki Pona Reader’s Kit** (free PDF)
+## Languages
 
----
+- English: `/en`
+- toki pona: `/tp`
 
-## ✦ About
+## Tech stack
 
-This project is intentionally **content-first**:
-- editorial layout
-- strong typography
-- simple structure
-- easy reuse for future book-series landings
+- Next.js (App Router) + TypeScript
+- CSS Modules
+- Dictionary-based i18n (JSON)
+- Hosted on Vercel
 
-Texts live in JSON dictionaries; book links and images are kept in a single place.
+## Project structure
 
----
+- `src/app/[lang]/page.tsx` — main landing per language
+- `src/app/[lang]/books/[slug]/page.tsx` — “learn more” pages per book
+- `src/app/[lang]/legal/page.tsx` / `privacy/page.tsx` — legal pages
+- `src/dictionaries/en.json` / `tp.json` — all visible copy (hero, sections, FAQ, book texts)
+- `src/data/books.ts` — book metadata (slugs, links, assets)
+- `public/books/<slug>/...` — book assets (covers, promo images, PDFs)
 
-## 🧱 Tech Stack
+## Content editing
 
-- **Framework:** Next.js (App Router)
-- **Language:** TypeScript
-- **Styling:** CSS Modules
-- **i18n:** Dictionary-based JSON (`/en` and `/tp` routes)
-- **Hosting:** Vercel
-
----
-
-## 📁 Project Structure
-
-```
-src/
-├── app/
-│   └── [lang]/           # Localized routes (/en, /tp)
-│       ├── page.tsx      # Main landing
-│       ├── legal/
-│       └── privacy/
-├── components/
-│   ├── Hero.tsx          # Book stack hero
-│   ├── WhySection.tsx    # Why-this-series section
-│   ├── BookSection.tsx   # Book blocks with CTAs
-│   └── Footer.tsx
-├── data/
-│   └── books.ts          # Book metadata & links
-└── dictionaries/
-    ├── en.json
-    └── tp.json
-
-public/
-└── assets/books/
-    ├── marcus-meditations/
-    └── readers-kit/
-```
-
----
-
-## ✍️ Content Editing
-
-### Dictionaries
-All visible text lives in:
+### Update texts
+Edit:
 - `src/dictionaries/en.json`
 - `src/dictionaries/tp.json`
 
-### Books
-Book entries and outgoing links:
+### Update books / links
+Edit:
 - `src/data/books.ts`
 
-Images:
-- `public/assets/books/{book-id}/`
+### Update images / PDFs
+Put assets in:
+- `public/books/<slug>/`
 
----
+Recommended naming:
+- `cover.png`
+- `promo.jpg`
+- `<slug>.pdf`
 
-## 🚀 Development
+## Development
 
 ```bash
 npm install
@@ -92,8 +59,5 @@ npm run dev
 npm run build
 ```
 
----
-
-## © License
-
-© 2026 ABVX.xyz. All rights reserved.
+## **License**
+MIT (see LICENSE).
