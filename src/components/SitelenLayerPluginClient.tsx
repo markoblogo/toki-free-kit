@@ -35,6 +35,7 @@ export default function SitelenLayerPluginClient(): null {
               requireDominantTokiPona: true,
               threshold: 0.7,
               showToggle: true,
+              toggleMount: '#sitelen-layer-toggle-mount',
               debug: true,
               debugOverlay: true,
               mutationObserver: {

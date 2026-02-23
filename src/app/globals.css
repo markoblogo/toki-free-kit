@@ -153,3 +153,41 @@ button {
 #tp-content-scope.toki-free-sitelen-pona {
   line-height: 1.38;
 }
+
+/* sitelen-layer-plugin: header-mounted toggle */
+#sitelen-layer-toggle-mount .slp-toggle {
+  position: static;
+  right: auto;
+  bottom: auto;
+  z-index: 1;
+  gap: 2px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  backdrop-filter: none;
+}
+
+#sitelen-layer-toggle-mount .slp-toggle__btn {
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  color: var(--color-ink-light);
+  font-size: 12px;
+}
+
+#sitelen-layer-toggle-mount .slp-toggle__btn:hover {
+  border-color: rgba(17, 24, 39, 0.16);
+  color: var(--color-ink);
+}
+
+#sitelen-layer-toggle-mount .slp-toggle__btn.is-active {
+  background: rgba(17, 24, 39, 0.08);
+  color: var(--color-ink);
+}
+
+#sitelen-layer-toggle-mount .slp-toggle__btn.is-disabled,
+#sitelen-layer-toggle-mount .slp-toggle__btn:disabled {
+  opacity: 0.35;
+}

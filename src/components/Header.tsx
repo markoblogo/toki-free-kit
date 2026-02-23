@@ -30,6 +30,7 @@ export default function Header({ lang, dict }: { lang: 'en' | 'tp'; dict?: any }
         </nav>
 
         <div className={styles.actions}>
+          {lang === 'tp' ? <div id="sitelen-layer-toggle-mount" className={styles.sitelenToggleMount} /> : null}
           <LanguageSwitch currentLang={lang} />
         </div>
       </div>
