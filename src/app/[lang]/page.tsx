@@ -9,6 +9,7 @@ import FAQ from '@/components/FAQ';
 import styles from './page.module.css';
 import { books } from '@/data/books';
 import { orgJsonLd, seriesJsonLd, websiteJsonLd, jsonLdForBookLocalized } from '@/lib/jsonld';
+import SitelenLayerPluginClient from '@/components/SitelenLayerPluginClient';
 
 export default async function Page({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
@@ -47,8 +48,13 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
   }
 
   return (
-    <main className={styles.main}>
+    <main
+      id={validLang === 'tp' ? 'tp-content-scope' : undefined}
+      data-sitelen-layer-scope={validLang === 'tp' ? '' : undefined}
+      className={styles.main}
+    >
       <Script id="jsonld-toki-free" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }} />
+      <SitelenLayerPluginClient />
 
       <Header lang={validLang} dict={dict} />
       <Hero dict={dict} lang={validLang} />

@@ -15,6 +15,14 @@ A small bilingual landing page that collects free toki pona reader kits and free
 - English: `/en`
 - toki pona: `/tp`
 
+## Optional toki pona script layers (sitelen pona / sitelen emoji)
+
+This project can use the `sitelen-layer-plugin` for the toki pona locale (`/tp`):
+
+- Plugin repo: <https://github.com/markoblogo/sitelen-layer-plugin>
+- Scope: display-layer enhancement for existing toki pona text (`latin`, `sitelen-pona`, `sitelen-emoji`)
+- Not a translator: it does not translate other languages into toki pona
+
 ## Tech stack
 
 - Next.js (App Router) + TypeScript

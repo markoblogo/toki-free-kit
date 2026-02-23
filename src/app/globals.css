@@ -1,3 +1,5 @@
+@import 'sitelen-layer-plugin/styles.css';
+
 :root {
   --font-sans: 'Outfit', sans-serif;
   --font-serif: 'Playfair Display', serif;
@@ -145,4 +147,9 @@ button {
     transition: none !important;
     transform: none !important;
   }
+}
+
+/* sitelen-layer-plugin integration hook */
+#tp-content-scope.toki-free-sitelen-pona {
+  line-height: 1.38;
 }
