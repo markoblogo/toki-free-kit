@@ -12,7 +12,7 @@
     "next": "16.1.1",
     "react": "19.2.3",
     "react-dom": "19.2.3",
-    "sitelen-layer-plugin": "file:vendor/sitelen-layer-plugin-0.1.0.tgz"
+    "sitelen-layer-plugin": "file:vendor/sitelen-layer-plugin-0.1.1.tgz"
   },
   "devDependencies": {
     "@types/node": "^20",
