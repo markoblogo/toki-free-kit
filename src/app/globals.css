@@ -160,8 +160,8 @@ button {
   right: auto;
   bottom: auto;
   z-index: 1;
-  gap: 2px;
-  padding: 0;
+  gap: 4px;
+  padding: 2px;
   border: 0;
   border-radius: 0;
   background: transparent;
@@ -169,12 +169,17 @@ button {
 }
 
 #sitelen-layer-toggle-mount .slp-toggle__btn {
-  width: 22px;
-  height: 22px;
   border-radius: 4px;
   border: 1px solid transparent;
   color: var(--color-ink-light);
-  font-size: 12px;
+}
+
+#sitelen-layer-toggle-mount .slp-toggle.slp-toggle--size-lg .slp-toggle__btn {
+  min-width: 42px;
+  height: 36px;
+  padding: 0 12px;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 #sitelen-layer-toggle-mount .slp-toggle__btn:hover {

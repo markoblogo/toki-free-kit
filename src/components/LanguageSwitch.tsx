@@ -17,7 +17,7 @@ export default function LanguageSwitch({ currentLang }: { currentLang: 'en' | 't
     };
 
     return (
-        <div className={styles.switch}>
+        <div className={styles.switch} data-locale-switcher>
             <Link
                 href={getNewPath('en')}
                 className={`${styles.btn} ux-hover-btn ux-focus-ring ${currentLang === 'en' ? styles.active : ''}`}

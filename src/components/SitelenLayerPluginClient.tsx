@@ -3,7 +3,7 @@
 import { useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 
-const TP_SCOPE_SELECTOR = '#tp-content-scope';
+const TP_SCOPE_SELECTOR = 'main';
 
 export default function SitelenLayerPluginClient(): null {
   const pathname = usePathname();
@@ -36,6 +36,14 @@ export default function SitelenLayerPluginClient(): null {
               threshold: 0.7,
               showToggle: true,
               toggleMount: '#sitelen-layer-toggle-mount',
+              toggleMode: 'auto',
+              toggleSize: 'lg',
+              toggleLabels: {
+                latin: 'TP',
+                'sitelen-pona': { text: 'SP', ariaLabel: 'Sitelen pona mode' },
+                'sitelen-emoji': { text: '🙂', ariaLabel: 'Sitelen emoji mode' }
+              },
+              excludeSelectors: ['[data-locale-switcher]', '#sitelen-layer-toggle-mount'],
               debug: true,
               debugOverlay: true,
               mutationObserver: {
@@ -59,6 +67,7 @@ export default function SitelenLayerPluginClient(): null {
             match: { pathnamePrefix: '/en' },
             config: {
               container: TP_SCOPE_SELECTOR,
+              excludeSelectors: ['[data-locale-switcher]', '#sitelen-layer-toggle-mount'],
               showToggle: false,
               layers: ['latin'],
               defaultLayer: 'latin',
