@@ -57,7 +57,7 @@ export default function SitelenLayerPluginClient(): null {
                 fontFamily: "'nasin-sitelen-pu', 'Noto Sans', sans-serif",
                 fontCssUrl: 'https://cdn.jsdelivr.net/gh/ETBCOR/nasin-sitelen-pu@latest/nasin-sitelen-pu.css',
                 className: 'toki-free-sitelen-pona',
-                renderStrategy: 'font-only'
+                renderStrategy: 'transform'
               }
             }
           },
