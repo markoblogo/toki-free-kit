@@ -48,12 +48,12 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
   }
 
   return (
-    <main className={styles.main}>
+    <main className={styles.main} data-sitelen-layer-scope={validLang === 'tp' ? '' : undefined}>
       <Script id="jsonld-toki-free" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }} />
       <SitelenLayerPluginClient />
 
       <Header lang={validLang} dict={dict} />
-      <div id={validLang === 'tp' ? 'tp-content-scope' : undefined} data-sitelen-layer-scope={validLang === 'tp' ? '' : undefined}>
+      <div id={validLang === 'tp' ? 'tp-content-scope' : undefined}>
         <Hero dict={dict} lang={validLang} />
         <WhySection dict={dict} />
         <BookList dict={dict} />
