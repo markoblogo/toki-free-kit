@@ -23,6 +23,18 @@ This project can use the `sitelen-layer-plugin` for the toki pona locale (`/tp`)
 - Scope: display-layer enhancement for existing toki pona text (`latin`, `sitelen-pona`, `sitelen-emoji`)
 - Not a translator: it does not translate other languages into toki pona
 
+### Runtime verification on live `/tp`
+
+Use these fingerprints after deployment to confirm the newest integration bundle is active:
+
+- Toggle class includes `slp-toggle--size-lg`
+- Toggle button texts are `TP / SP / 🙂`
+- Diagnostics overlay shows:
+  - `Toggle mode: inline`
+  - `Toggle size: lg`
+  - `Toggle mount: ...`
+  - `Container: main`
+
 ## Tech stack
 
 - Next.js (App Router) + TypeScript
