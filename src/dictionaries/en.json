@@ -10,6 +10,7 @@
     "nav": {
       "translator": "Translator",
       "learn": "Learn",
+      "chinese_wisdom": "Chinese Wisdom",
       "toki_stoic": "Toki Stoic",
       "faq": "FAQ",
       "legacy": "Legacy kit"
@@ -157,8 +158,8 @@
         "subtitle": "Translate into toki pona."
       },
       "learn": {
-        "title": "Learn Toki Pona",
-        "subtitle": "Courses and learning resources."
+        "title": "Chinese Wisdom in toki pona",
+        "subtitle": "Bilingual series landing for Chinese classics in toki pona."
       },
       "stoic": {
         "title": "Stoic Wisdom in Toki Pona",

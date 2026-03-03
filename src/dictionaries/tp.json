@@ -10,6 +10,7 @@
     "nav": {
       "translator": "ante toki",
       "learn": "kama sona",
+      "chinese_wisdom": "Chinese Wisdom",
       "toki_stoic": "Toki Stoic",
       "faq": "sona lili",
       "legacy": "legacy"
@@ -157,8 +158,8 @@
         "subtitle": "o ante e toki tawa toki pona."
       },
       "learn": {
-        "title": "o kama sona e toki pona",
-        "subtitle": "nasin kama sona en ilo lipu."
+        "title": "Chinese Wisdom in toki pona",
+        "subtitle": "lipu kulupu pi sona tan ma Sonko lon toki pona."
       },
       "stoic": {
         "title": "Stoic Wisdom lon toki pona",

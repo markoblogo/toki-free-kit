@@ -21,6 +21,9 @@ export default function Header({ lang, dict }: { lang: 'en' | 'tp'; dict?: any }
           <a className={`${styles.navLink} ux-hover-btn ux-focus-ring`} href="https://toki.abvx.xyz/learn" target="_blank" rel="noopener noreferrer">
             {dict?.header?.nav?.learn ?? 'Learn'}
           </a>
+          <a className={`${styles.navLink} ux-hover-btn ux-focus-ring`} href="https://dao-toki.abvx.xyz/" target="_blank" rel="noopener noreferrer">
+            {dict?.header?.nav?.chinese_wisdom ?? 'Chinese Wisdom'}
+          </a>
           <a className={`${styles.navLink} ux-hover-btn ux-focus-ring`} href="https://stoic.abvx.xyz/" target="_blank" rel="noopener noreferrer">
             {dict?.header?.nav?.toki_stoic ?? 'Toki Stoic'}
           </a>

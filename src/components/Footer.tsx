@@ -91,9 +91,9 @@ export default function Footer({ dict, lang }: { dict: any; lang: 'en' | 'tp' })
               />
               <Banner
                 variant="learn"
-                href="https://toki.abvx.xyz/learn"
-                title={dict?.footer?.banners?.learn?.title ?? 'Learn Toki Pona'}
-                subtitle={dict?.footer?.banners?.learn?.subtitle ?? 'Courses and learning resources.'}
+                href="https://dao-toki.abvx.xyz/"
+                title={dict?.footer?.banners?.learn?.title ?? 'Chinese Wisdom in toki pona'}
+                subtitle={dict?.footer?.banners?.learn?.subtitle ?? 'Bilingual series landing for Chinese classics in toki pona.'}
                 iconText=">"
               />
               <Banner
