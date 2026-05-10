@@ -20,7 +20,7 @@
     "title": "kulupu lipu pi toki pona pi mani ala",
     "subtitle": "lipu ni li kulupu pi lipu kama sona lon toki pona. o open kepeken kulupu lipu pi kama lukin. o kama sona sin kepeken sona pi lipu pi tenpo pini. o lukin e lipu lawa lon toki pona.",
     "note": "lipu ale lon ni li mani ala. sina ken kama jo e ona, sina ken lukin e ona. sina wile ala pana e nimi sina.",
-    "all_free_badge": "ALE LI MANI ALA",
+    "all_free_badge": "mani ala",
     "primary_cta": "o lukin e lipu pi mani ala",
     "secondary_cta": "lipu pini",
     "download_pdf": "o kama jo",
@@ -53,21 +53,21 @@
   "books": {
     "readers-kit": {
       "title": "kulupu lipu pi kama lukin",
-      "author": "jan ABVX",
+      "author": "jan pali lipu",
       "summary": "lipu ni li kulupu open pi kama sona. ona li tan kulupu lipu pi pilin awen lon toki pona. ona li jo e toki pona ale pi jan sona pi nanpa. lipu ni li lon sitelen nimi, li jo e lipu sama tawa sitelen pona. nasin lipu li sama lon kulupu ale: o lukin lili, o lukin sin, o kama sona.",
       "notes": "ijo insa: toki pona pi jan sona pi nanpa; sitelen nimi; lipu sama tawa sitelen pona; nasin lipu pi kama sona.",
       "promoAlt": "sitelen pi kulupu lipu pi kama lukin"
     },
     "chinese-wisdom": {
       "title": "sona pi lipu pi tenpo pini",
-      "author": "jan ABVX",
+      "author": "jan pali lipu",
       "summary": "lipu ni li open pi kulupu lipu pi tenpo pini lon toki pona. ona li pana e nasin lukin pi kulupu lipu ni. nasin sama li lon lipu ante sama lipu pi sona utala en lipu nasin. lipu ni li jo e toki pona ale pi olin ale. nasin lipu li pona tawa lukin sin, li pona tawa kama sona.",
       "notes": "ijo insa: lipu pi olin ale; nasin lukin pi kulupu lipu pi tenpo pini; lipu poka tawa kama sona.",
       "promoAlt": "sitelen pi lipu pi tenpo pini lon toki pona"
     },
     "heart-sutra": {
       "title": "lipu lawa",
-      "author": "jan ABVX",
+      "author": "jan pali lipu",
       "summary": "lipu lawa ni li toki ante pi mani ala. ona li kama poka kulupu lipu pi tenpo pini lon toki pona. lipu ni li jo e sitelen pi lipu pi tenpo pini, e toki ante pi lukin, e toki pona, e lipu sama tawa sitelen pona. ona li pona tawa lukin pi tenpo lili, li pona tawa pali kama sona pi tenpo ale.",
       "notes": "ijo insa: sitelen pi lipu pi tenpo pini; toki ante pi lukin; toki pona; lipu sama tawa sitelen pona.",
       "promoAlt": "sitelen pi lipu lawa lon toki pona"
@@ -82,7 +82,7 @@
         "a": "tomo ni li kulupu pi lipu pi mani ala. ona li jo e lipu kama sona lon toki pona, e lipu toki ante, e nasin kama jo."
       },
       {
-        "q": "lipu ni li mani ala ala?",
+        "q": "lipu ni li mani ala anu seme?",
         "a": "lipu ale lon ni li mani ala. sina ken kama jo e ona, sina ken lukin e ona. sona pi ken kepeken li lon lipu wan wan."
       },
       {
