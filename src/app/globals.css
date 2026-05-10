@@ -196,3 +196,17 @@ button {
 #sitelen-layer-toggle-mount .slp-toggle__btn:disabled {
   opacity: 0.35;
 }
+
+/* Keep transformed badge emoji readable on the red sticker background. */
+.slp-layer--sitelen-emoji [class*="GiftBadge-module"][class*="text"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 86%;
+  padding: 5px 7px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.94);
+  color: #141414;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+}
