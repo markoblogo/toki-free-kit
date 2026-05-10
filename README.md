@@ -15,25 +15,40 @@ A small bilingual landing page that collects free toki pona reader kits and free
 - English: `/en`
 - toki pona: `/tp`
 
-## Optional toki pona script layers (sitelen pona / sitelen emoji)
+## toki pona display layers
 
-This project can use the `sitelen-layer-plugin` for the toki pona locale (`/tp`):
+This site uses `sitelen-layer-plugin` on the toki pona route:
 
-- Plugin repo: <https://github.com/markoblogo/sitelen-layer-plugin>
-- Scope: display-layer enhancement for existing toki pona text (`latin`, `sitelen-pona`, `sitelen-emoji`)
-- Not a translator: it does not translate other languages into toki pona
+- Live TP route: <https://toki-free.abvx.xyz/tp>
+- Plugin repository: <https://github.com/markoblogo/sitelen-layer-plugin>
+
+Available display modes on `/tp`:
+
+- `TP`: Latin toki pona
+- `SP`: sitelen pona via ligature font
+- `🙂`: sitelen emoji
+
+Behavior:
+
+- `/en` opens as normal English and only shows `EN / TP`.
+- `/tp` opens as Latin toki pona by default and shows `EN / TP / SP / 🙂` in the header.
+- The `EN / TP` locale switcher is not transformed.
+- The emoji layer renders the existing toki pona text as emoji according to the plugin mapping.
+- The sitelen pona layer renders real glyphs through a ligature-capable sitelen pona font.
+
+This is not machine translation. The TP copy is authored separately; the plugin only changes display layers for existing toki pona content.
 
 ### Runtime verification on live `/tp`
 
 Use these fingerprints after deployment to confirm the newest integration bundle is active:
 
+- `/en`: only `EN / TP`, no layer controls
+- `/tp`: `EN / TP / SP / 🙂` controls in the header
+- Emoji mode: header/main/footer TP text transforms where appropriate
+- SP mode: real sitelen pona glyphs render
+- Locale switcher remains `EN / TP`
 - Toggle class includes `slp-toggle--size-lg`
-- Toggle button texts are `TP / SP / 🙂`
-- Diagnostics overlay shows:
-  - `Toggle mode: inline`
-  - `Toggle size: lg`
-  - `Toggle mount: ...`
-  - `Container: main`
+- Diagnostics overlay shows `Toggle mode: inline` and `Container: main`
 
 ## Tech stack
 
