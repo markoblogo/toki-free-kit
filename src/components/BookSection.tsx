@@ -19,6 +19,8 @@ export default function BookSection({ book, dict, isLast }: BookSectionProps) {
   const title = localizedBook?.title ?? book.id;
   const shortDesc = localizedBook?.summary ?? '';
   const longDesc = localizedBook?.notes ?? '';
+  const promoAlt = localizedBook?.promoAlt ?? `Promo for ${title}`;
+  const badgeLabel = lang === 'tp' ? dict.hero.all_free_badge : 'FREE';
 
   return (
     <section id={book.id} className={`${styles.section} ${isLast ? styles.lastSection : ''}`}>
@@ -37,8 +39,8 @@ export default function BookSection({ book, dict, isLast }: BookSectionProps) {
               }
             }}
           >
-            <GiftBadge label="FREE" className={styles.sectionBadge} />
-            <Image src={book.promoImage} alt={`Promo for ${title}`} fill className={styles.promoImg} sizes="(max-width: 768px) 100vw, 50vw" />
+            <GiftBadge label={badgeLabel} className={styles.sectionBadge} />
+            <Image src={book.promoImage} alt={promoAlt} fill className={styles.promoImg} sizes="(max-width: 768px) 100vw, 50vw" />
             <div className={styles.zoomHint}>🔍</div>
           </div>
         </div>
