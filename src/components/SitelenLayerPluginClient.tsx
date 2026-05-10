@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 
 const TP_SCOPE_SELECTOR = 'main';
+const sitelenDebugEnabled = process.env.NODE_ENV === 'development';
 
 export default function SitelenLayerPluginClient(): null {
   const pathname = usePathname();
@@ -44,8 +45,8 @@ export default function SitelenLayerPluginClient(): null {
                 'sitelen-emoji': { text: '🙂', ariaLabel: 'Sitelen emoji mode' }
               },
               excludeSelectors: ['[data-locale-switcher]', '#sitelen-layer-toggle-mount'],
-              debug: true,
-              debugOverlay: true,
+              debug: sitelenDebugEnabled,
+              debugOverlay: sitelenDebugEnabled,
               mutationObserver: {
                 enabled: true,
                 incremental: true,
